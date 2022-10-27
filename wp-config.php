@@ -29,7 +29,7 @@ define( 'DB_USER', 'u316512246_coc' );
 define( 'DB_PASSWORD', 'Mm@g1974' );
 
 /** Nome do host do MySQL */
-define( 'DB_HOST', 'futplacar.com.br' );
+define( 'DB_HOST', 'localhost' );
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define( 'DB_CHARSET', 'utf8' );
