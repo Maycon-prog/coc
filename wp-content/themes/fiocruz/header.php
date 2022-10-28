@@ -12,3 +12,4 @@
 </header>
 
 <body <?php body_class(); ?>>
+<h1>header.php</h1>
