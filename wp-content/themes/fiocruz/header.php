@@ -1,15 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?>>
-
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title(''); ?></title>
-    <?php wp_head(); ?>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<?php $viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' ); ?>
+	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<?php wp_head(); ?>
 </head>
-<header>
-</header>
-
 <body <?php body_class(); ?>>
-<h1>header.php</h1>
