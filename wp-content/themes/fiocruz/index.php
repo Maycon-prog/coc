@@ -1,5 +1,5 @@
 <?php get_header() ?>
     <span>index.php</span>
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
 </body>
 </html>
