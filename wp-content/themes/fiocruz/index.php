@@ -8,7 +8,8 @@
 </head>
 <body>
 
-<?php the_content(); ?>
+<?php //the_content(); ?>
+<?php echo "teste" ?>
 
 <?php wp_footer(); ?>
 </body>
