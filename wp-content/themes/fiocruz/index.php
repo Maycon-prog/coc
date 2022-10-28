@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php the_content(); ?>
+<h1>index.php</h1>
 
 <?php get_footer(); ?>
 </body>
