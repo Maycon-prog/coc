@@ -9,16 +9,6 @@
     <?php wp_head(); ?>
 </head>
 <header>
-    <nav>
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location' => 'main_menu', // identificador do menu
-                'depth' => 1 // limita submenus
-            )
-        )
-        ?>
-    </nav>
 </header>
 
 <body <?php body_class(); ?>>
