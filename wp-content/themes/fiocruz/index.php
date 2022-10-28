@@ -1,9 +1,7 @@
-<?php get_header() ?>
+<?php get_header(); ?>
 
-<?php the_content()?>
+<?php the_content(); ?>
 
-<footer>
-    <span>footer.php</span>
-</footer>
+<?php get_footer(); ?>
 </body>
 </html>
