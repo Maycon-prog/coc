@@ -20,3 +20,5 @@ function theme_add_config()
     );
 }
 add_action('after_setup_theme', 'theme_add_config', 0);
+
+require_once('./widgets/my-widgets.php');
