@@ -1,3 +1,1 @@
-<?php
-
-echo "oi";
+<?php get_header(); ?>
