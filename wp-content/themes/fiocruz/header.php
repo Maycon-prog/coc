@@ -8,10 +8,5 @@
     <title><?php wp_title('|', true, 'right'); ?></title>
     <?php wp_head(); ?>
 </head>
-<header>
-    <nav class="nav-menu">
-
-    </nav>
-</header>
 
 <body <?php body_class(); ?>>
