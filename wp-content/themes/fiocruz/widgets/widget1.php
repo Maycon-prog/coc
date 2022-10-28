@@ -1,7 +1,7 @@
 <?php
 namespace Elementor;
 
-class My_Widget_Imagem extends Widget_Base{
+class My_Widget_1 extends Widget_Base{
 	
 	public function get_name() {
 		return 'Imagem';
