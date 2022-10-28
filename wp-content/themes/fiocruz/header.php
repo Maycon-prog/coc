@@ -1,7 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-    <title>title</title>
+    <title><?php bloginfo('name'); ?> &raquo; <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php $viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' ); ?>
 	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
