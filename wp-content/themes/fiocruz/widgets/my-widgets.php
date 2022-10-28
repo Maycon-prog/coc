@@ -13,7 +13,7 @@ class My_Elementor_Widgets {
 	}
 
 	protected function __construct() {
-		require_once('widget-imagem.php');
+		require_once('./widget-imagem.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
 
