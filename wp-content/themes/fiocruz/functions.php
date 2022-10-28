@@ -7,6 +7,7 @@ function theme_add_scripts() {
     }
     
     add_action( 'wp_enqueue_scripts', 'theme_add_scripts');
+    
 function theme_add_config(){
     register_nav_menus(
         array(
