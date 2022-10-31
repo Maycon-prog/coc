@@ -45,7 +45,7 @@ class My_Widget_1 extends Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
-		echo "<p lang='pt'>$settings[Texto]</p>";
+		echo $settings['Texto'];
 		
 	}
 	
