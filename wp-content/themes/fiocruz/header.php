@@ -9,7 +9,7 @@
     <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
     <?php wp_head(); ?>
 </head> 
-<header>
+<header onkeydown="verificadorDeTeclas()">
     <nav class="nav-menu">
         <?php
         wp_nav_menu(

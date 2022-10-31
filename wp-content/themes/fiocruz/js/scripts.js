@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-document.addEventListener('keyup', (event) => {
-    var name = event.key;
-    if (name === '2') {
-      alert('2 foi pressionado');
+function verificadorDeTeclas(){
+    if(event.key == '2') {
+        document.getElementById("menu-item-19").focus();
+    } else {
+        alert("deu ruim");
     }
-  }, false);
+}
 
