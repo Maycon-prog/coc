@@ -15,6 +15,7 @@ class My_Elementor_Widgets {
 	protected function __construct() { 
 		require_once('widget1.php');
 		require_once('widget2.php');
+		require_once('widget3.php');
 		require_once('widget_slider.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
@@ -22,6 +23,7 @@ class My_Elementor_Widgets {
 	public function register_widgets() {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_1() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_2() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_3() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_slider() );
 	}
 
