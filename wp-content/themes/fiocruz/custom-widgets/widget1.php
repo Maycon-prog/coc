@@ -39,49 +39,13 @@ class My_Widget_1 extends Widget_Base {
 		);
 
 		$this->end_controls_section();
-
-		$this->start_controls_section(
-			'section_title2',
-			[
-				'label' => __( 'Style', 'elementor' ),
-			]
-		);
-		
-		$this->add_control(
-			'Cor',
-			[
-				'label' => __( 'Cor', 'elementor' ),
-				'label_block' => true,
-				'type' => Controls_Manager::COLOR,
-				'default' => '#000',
-				'placeholder' => __( 'Insira cor para um texto:', 'elementor' ),
-			]
-		);
-
-		$this->add_control(
-			'Fonte',
-			[
-				'label' => __( 'Fonte', 'elementor' ),
-				'label_block' => true,
-				'type' => Controls_Manager::FONT,
-				'selectors' => [
-					'{{WRAPPER}} p' => 'text-align: {{VALUE}}',
-				],
-			]
-		);
-
-		$this->end_controls_section();
 	}
 	
 	protected function render() {
 
         $settings = $this->get_settings_for_display();
 
-		?>
-
-		<p lang="pt" style="color: <?php echo $settings['Cor']; ?>; "><?php echo $settings['Texto']; ?></p>
-
-		<?php
+		echo "<p lang='pt'>$settings[Texto]</p>";
 		
 	}
 	
