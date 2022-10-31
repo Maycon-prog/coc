@@ -106,6 +106,11 @@ class widget_slider extends Widget_Base
                 </ul>
             </div>
         </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new Splide('#slider').mount();
+            });
+        </script>
 <?php
     }
 
