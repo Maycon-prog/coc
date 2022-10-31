@@ -46,6 +46,12 @@ class My_Widget_2 extends Widget_Base {
 				'label_block' => true,
 				'type' => Controls_Manager::URL,
 				'placeholder' => __( 'Insira um Link:', 'elementor' ),
+                'default' => [
+					'url' => '',
+					'is_external' => false,
+					'nofollow' => true,
+					// 'custom_attributes' => '',
+				],
 			]
 		);
 
@@ -77,34 +83,11 @@ class My_Widget_2 extends Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
-        if( ($settings['Sucede'] == '') && ($settings['Antecede'] == '') ) {
-            if ($settings['Blank']['is_external']) {
-                echo "<a href='' target='_blank' rel='noopener'>$settings[Texto]</a>";
+            if ($settings['Blank']) {
+                echo "<p>$settings[Antecede] <a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto] ".var_dump($settings[Link]);."</a> $settings[Sucede]</p>";
             } else {
-                echo "<a href=''>$settings[Texto]</a>";
+                echo "<p>$settings[Antecede] <a href='$settings[Link]'>$settings[Texto]</a> $settings[Sucede]</p>";
             }
-
-        } else if (($settings['Sucede'] != '') && ($settings['Antecede'] == '')) {
-            if ($settings['Blank']['is_external']) {
-                echo "<p><a href='' target='_blank' rel='noopener'>$settings[Texto]</a> $settings[Sucede]</p>";
-            } else {
-                echo "<p><a href=''>$settings[Texto]</a> $settings[Sucede]</p>";
-            }
-
-        } else if (($settings['Sucede'] == '') && ($settings['Antecede'] != '')) {
-            if ($settings['Blank']['is_external']) {
-                echo "<p>$settings[Antecede] <a href='' target='_blank' rel='noopener'>$settings[Texto]</a></p>";
-            } else {
-                echo "<p>$settings[Antecede] <a href=''>$settings[Texto]</a></p>";
-            }
-            
-        } else {
-            if ($settings['Blank']['is_external']) {
-                echo "<p>$settings[Antecede] <a href='' target='_blank' rel='noopener'>$settings[Texto]</a> $settings[Sucede]</p>";
-            } else {
-                echo "<p>$settings[Antecede] <a href=''>$settings[Texto]</a> $settings[Sucede]</p>";
-            }
-        }
 	}
 	
 	protected function _content_template() {
