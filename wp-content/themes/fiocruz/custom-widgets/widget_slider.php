@@ -113,7 +113,6 @@ class widget_slider extends Widget_Base
                 border-top: 50px solid transparent;
                 border-bottom: 50px solid transparent;
                 border-left: 50px solid #ABA8B2;
-                background-color: none;
             }
 
             .next {
@@ -122,6 +121,9 @@ class widget_slider extends Widget_Base
                 border-top: 50px solid transparent;
                 border-bottom: 50px solid transparent;
                 border-right: 50px solid #ABA8B2;
+            }
+            .splide_arrow{
+                background: none !important;
             }
         </style>
 <?php
