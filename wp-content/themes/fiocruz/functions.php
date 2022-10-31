@@ -1,5 +1,7 @@
 <?php
 
+require_once("custom-widgets/my-widgets.php");
+
 function theme_add_scripts()
 {
     wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css');
@@ -20,5 +22,3 @@ function theme_add_config()
     );
 }
 add_action('after_setup_theme', 'theme_add_config', 0);
-
-require_once("custom-widgets/my-widgets.php");
