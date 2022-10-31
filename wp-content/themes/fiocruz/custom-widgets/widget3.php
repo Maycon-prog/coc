@@ -62,7 +62,7 @@ class My_Widget_3 extends Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
-        echo "<iframe width="560" height="315" src='". $settings['Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+        echo "<iframe width='560' height='315' src='". $settings['Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
 	}
 	
 	protected function _content_template() {
