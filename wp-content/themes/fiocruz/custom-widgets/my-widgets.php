@@ -12,7 +12,7 @@ class My_Elementor_Widgets {
 		return static::$instance;
 	}
 
-	protected function __construct() {
+	protected function __construct() { 
 		require_once('widget1.php');
 		require_once('widget2.php');
 		require_once('widget_pular_conteudo.php');
