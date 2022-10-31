@@ -5,5 +5,4 @@ for (let i = 0; i < widgets_slides.length; i++) {
     console.log('slider' + i);
 }
 console.log('scripts.js');
-;
 
