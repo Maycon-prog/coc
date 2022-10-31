@@ -33,7 +33,7 @@ class My_Widget_1 extends Widget_Base {
 			[
 				'label' => __( 'Texto', 'elementor' ),
 				'label_block' => true,
-				'type' => Controls_Manager::TEXTAREA,
+				'type' => Controls_Manager::WYSIWYG,
 				'placeholder' => __( 'Insira um texto:', 'elementor' ),
 			]
 		);
