@@ -7,6 +7,7 @@
     <meta name="viewport" content="<?php echo esc_attr($viewport_content); ?>">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <title>Teste title</title>
+    <?php wp_head(); ?>
 </head>
 <header>
     <nav class="nav-menu">
