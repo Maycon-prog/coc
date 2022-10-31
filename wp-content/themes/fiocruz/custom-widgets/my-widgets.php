@@ -13,8 +13,8 @@ class My_Elementor_Widgets {
 	}
 
 	protected function __construct() { 
-		require_once('widget1.php');
-		require_once('widget2.php');
+		require_once('widget1.php'); // para textos
+		require_once('widget2.php'); // para links
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
 
