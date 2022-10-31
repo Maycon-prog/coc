@@ -91,12 +91,18 @@ class widget_slider extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>
-        <section id="slider" class="splide" aria-label="Basic Structure Example">
+        <section id="slider" class="splide" aria-label="Beautiful Images">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide">Slide 01</li>
-                    <li class="splide__slide">Slide 02</li>
-                    <li class="splide__slide">Slide 03</li>
+                    <li class="splide__slide">
+                        slider 1
+                    </li>
+                    <li class="splide__slide">
+                        slider 2
+                    </li>
+                    <li class="splide__slide">
+                        slider 3
+                    </li>
                 </ul>
             </div>
         </section>
