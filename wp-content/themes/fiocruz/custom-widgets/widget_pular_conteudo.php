@@ -17,7 +17,7 @@ class My_Widget_Pular_Conteudo extends Widget_Base {
 	
 	public function get_categories() {
 		return [ 'basic' ];
-	}
+	} 
 	
 	protected function _register_controls() {
 
