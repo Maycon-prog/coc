@@ -88,33 +88,11 @@ class My_Widget_2 extends Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
-        if( ($settings['Sucede'] == '') && ($settings['Antecede'] == '') ) {
-            if ( 'yes' === $settings['Blank'] ) {
-                echo "<a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto]</a>";
-            } else {
-                echo "<a href='$settings[Link]'>$settings[Texto]</a>";
-            }
 
-        } else if (($settings['Sucede'] != '') && ($settings['Antecede'] == '')) {
-            if ( 'yes' === $settings['Blank'] ) {
-                echo "<p><a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto]</a> $settings[Sucede]</p>";
-            } else {
-                echo "<p><a href='$settings[Link]'>$settings[Texto]</a> $settings[Sucede]</p>";
-            }
-
-        } else if (($settings['Sucede'] == '') && ($settings['Antecede'] != '')) {
-            if ( 'yes' === $settings['Blank'] ) {
-                echo "<p>$settings[Antecede] <a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto]</a></p>";
-            } else {
-                echo "<p>$settings[Antecede] <a href='$settings[Link]'>$settings[Texto]</a></p>";
-            }
-            
+        if ( 'yes' === $settings['Blank'] ) {
+            echo "<a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto]</a>";
         } else {
-            if ( 'yes' === $settings['Blank'] ) {
-                echo "<p>$settings[Antecede] <a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto]</a> $settings[Sucede]</p>";
-            } else {
-                echo "<p>$settings[Antecede] <a href='$settings[Link]'>$settings[Texto]</a> $settings[Sucede]</p>";
-            }
+            echo "<a href='$settings[Link]'>$settings[Texto]</a>";
         }
 	}
 	
