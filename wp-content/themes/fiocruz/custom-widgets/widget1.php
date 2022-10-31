@@ -39,7 +39,7 @@ class My_Widget_1 extends Widget_Base {
 		);
 
 		$this->start_controls_section(
-			'section_title',
+			'section_title2',
 			[
 				'label' => __( 'Style', 'elementor' ),
 			]
