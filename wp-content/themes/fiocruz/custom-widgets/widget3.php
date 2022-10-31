@@ -35,7 +35,7 @@ class My_Widget_3 extends Widget_Base {
 				'label_block' => true,
 				'type' => Controls_Manager::TEXT,
 				'placeholder' => __( 'Insira um texto alternativo pro vídeo:', 'elementor' ),
-                'default' => '',
+                'default' => 'vídeo externo da fiocruz',
 			]
 		);
 
