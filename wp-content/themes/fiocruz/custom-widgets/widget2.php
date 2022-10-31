@@ -35,7 +35,6 @@ class My_Widget_2 extends Widget_Base {
 				'label_block' => true,
 				'type' => Controls_Manager::TEXT,
 				'placeholder' => __( 'Insira o texto que antecede o link:', 'elementor' ),
-                'default' => '',
 			]
 		);
 
@@ -66,7 +65,6 @@ class My_Widget_2 extends Widget_Base {
 				'label_block' => true,
 				'type' => Controls_Manager::TEXT,
 				'placeholder' => __( 'Insira o texto que sucede o link:', 'elementor' ),
-                'default' => '',
 			]
 		);
 
@@ -88,12 +86,8 @@ class My_Widget_2 extends Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
+        echo "<a href='$settings[Link]'>$settings[Texto]</a>";
 
-        if ( 'yes' === $settings['Blank'] ) {
-            echo "<a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto]</a>";
-        } else {
-            echo "<a href='$settings[Link]'>$settings[Texto]</a>";
-        }
 	}
 	
 	protected function _content_template() {
