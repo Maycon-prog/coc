@@ -44,3 +44,17 @@
     border-radius: 0 !important;
     top: 85% !important;
 }
+
+.slide-title{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.slide-content{
+    padding: 10px 80px 10px 80px;
+    color: #fff;
+    font-size: 0.8rem;
+    max-height: 380px;
+    text-overflow: ellipsis;
+}
