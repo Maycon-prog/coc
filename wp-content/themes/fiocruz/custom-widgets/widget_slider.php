@@ -91,7 +91,7 @@ class widget_slider extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>
-        <section id="slider" class="splide" data-splide='{"type":"loop","perPage":1}' aria-label="Basic Structure Example">
+        <section id="slider" class="splide" aria-label="Basic Structure Example">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">Slide 01</li>
