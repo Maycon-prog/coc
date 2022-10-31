@@ -84,7 +84,7 @@ class My_Widget_2 extends Widget_Base {
         $settings = $this->get_settings_for_display();
 
             if ($settings['Blank']) {
-                echo "<p>$settings[Antecede] <a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto] ". var_dump($settings[Link]); ."</a> $settings[Sucede]</p>";
+                echo "<p>$settings[Antecede] <a href='$settings[Link]' target='_blank' rel='noopener'>$settings[Texto] ". var_dump($settings[Link]) ."</a> $settings[Sucede]</p>";
             } else {
                 echo "<p>$settings[Antecede] <a href='$settings[Link]'>$settings[Texto]</a> $settings[Sucede]</p>";
             }
