@@ -68,17 +68,6 @@ class My_Widget_2 extends Widget_Base {
 			]
 		);
 
-        $this->add_control(
-			'Blank',
-			[
-				'label' => esc_html__( 'Link blank?', 'elementor' ),
-				'type' => Controls_Manager::SWITCHER,
-				'label_on' => esc_html__( 'Sim', 'elementor' ),
-				'label_off' => esc_html__( 'Não', 'elementor' ),
-				'return_value' => 'yes',
-				'default' => 'no',
-			]
-		);
 		$this->end_controls_section();
 	}
 	
