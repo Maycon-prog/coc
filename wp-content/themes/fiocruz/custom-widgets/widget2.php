@@ -79,30 +79,30 @@ class My_Widget_2 extends Widget_Base {
 
         if( ($settings['Sucede'] == '') && ($settings['Antecede'] == '') ) {
             if ($settings['Blank']['is_external']) {
-                echo "<a href='var_dump($settings[Link]);' target='_blank' rel='noopener'>$settings[Texto]</a>";
+                echo "<a href='' target='_blank' rel='noopener'>$settings[Texto] ".var_dump($settings[Link]);."</a>";
             } else {
-                echo "<a href='var_dump($settings[Link]);'>$settings[Texto]</a>";
+                echo "<a href=''>$settings[Texto] ".var_dump($settings[Link]);."</a>";
             }
 
         } else if (($settings['Sucede'] != '') && ($settings['Antecede'] == '')) {
             if ($settings['Blank']['is_external']) {
-                echo "<p><a href='var_dump($settings[Link]);' target='_blank' rel='noopener'>$settings[Texto]</a> $settings[Sucede]</p>";
+                echo "<p><a href='' target='_blank' rel='noopener'>$settings[Texto] ".var_dump($settings[Link]);."</a> $settings[Sucede]</p>";
             } else {
-                echo "<p><a href='var_dump($settings[Link]);'>$settings[Texto]</a> $settings[Sucede]</p>";
+                echo "<p><a href=''>$settings[Texto] ".var_dump($settings[Link]);."</a> $settings[Sucede]</p>";
             }
 
         } else if (($settings['Sucede'] == '') && ($settings['Antecede'] != '')) {
             if ($settings['Blank']['is_external']) {
-                echo "<p>$settings[Antecede] <a href='var_dump($settings[Link]);' target='_blank' rel='noopener'>$settings[Texto]</a></p>";
+                echo "<p>$settings[Antecede] <a href='' target='_blank' rel='noopener'>$settings[Texto] ".var_dump($settings[Link]);."</a></p>";
             } else {
-                echo "<p>$settings[Antecede] <a href='var_dump($settings[Link]);'>$settings[Texto]</a></p>";
+                echo "<p>$settings[Antecede] <a href=''>$settings[Texto] ".var_dump($settings[Link]);."</a></p>";
             }
             
         } else {
             if ($settings['Blank']['is_external']) {
-                echo "<p>$settings[Antecede] <a href='var_dump($settings[Link]);' target='_blank' rel='noopener'>$settings[Texto]</a> $settings[Sucede]</p>";
+                echo "<p>$settings[Antecede] <a href='' target='_blank' rel='noopener'>$settings[Texto] ".var_dump($settings[Link]);."</a> $settings[Sucede]</p>";
             } else {
-                echo "<p>$settings[Antecede] <a href='var_dump($settings[Link]);'>$settings[Texto]</a> $settings[Sucede]</p>";
+                echo "<p>$settings[Antecede] <a href=''>$settings[Texto] ".var_dump($settings[Link]);."</a> $settings[Sucede]</p>";
             }
         }
 	}
