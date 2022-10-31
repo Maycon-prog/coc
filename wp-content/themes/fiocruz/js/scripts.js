@@ -1,2 +1,2 @@
-new Splide('.slide').mount();
+new Splide('.splide').mount();
 
