@@ -106,27 +106,6 @@ class widget_slider extends Widget_Base
                 </ul>
             </div>
         </section>
-        <style>
-            .prev {
-                width: 0;
-                height: 0;
-                border-top: 50px solid transparent;
-                border-bottom: 50px solid transparent;
-                border-left: 50px solid #ABA8B2;
-            }
-
-            .next {
-                width: 0;
-                height: 0;
-                border-top: 50px solid transparent;
-                border-bottom: 50px solid transparent;
-                border-right: 50px solid #ABA8B2;
-            }
-            .splide__arrow{
-                background: none !important;
-                border-radius: 0 !important;
-            }
-        </style>
 <?php
     }
 
