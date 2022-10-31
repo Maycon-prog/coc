@@ -22,4 +22,4 @@
     </nav>
 </header>
 
-<body onkeydown="verificadorDeTeclas()" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
