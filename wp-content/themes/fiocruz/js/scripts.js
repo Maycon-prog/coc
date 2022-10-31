@@ -11,3 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('keyup', (event) => {
+    var name = event.key;
+    if (name === '2') {
+      alert('2 foi pressionado');
+    }
+  }, false);
+
