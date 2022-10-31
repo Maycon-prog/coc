@@ -107,7 +107,7 @@ class widget_slider extends Widget_Base
             </div>
         </section>
         <script>
-            new Splide('#slider').mount();
+            
         </script>
 <?php
     }
