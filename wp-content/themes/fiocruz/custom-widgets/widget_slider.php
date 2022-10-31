@@ -122,8 +122,9 @@ class widget_slider extends Widget_Base
                 border-bottom: 50px solid transparent;
                 border-right: 50px solid #ABA8B2;
             }
-            .splide_arrow{
+            .splide__arrow{
                 background: none !important;
+                border-radius: 0 !important;
             }
         </style>
 <?php
