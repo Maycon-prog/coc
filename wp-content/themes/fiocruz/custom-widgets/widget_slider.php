@@ -113,6 +113,7 @@ class widget_slider extends Widget_Base
                 border-top: 50px solid transparent;
                 border-bottom: 50px solid transparent;
                 border-left: 50px solid #ABA8B2;
+                background-color: none;
             }
 
             .next {
