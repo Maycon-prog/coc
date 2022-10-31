@@ -62,7 +62,7 @@ class My_Widget_3 extends Widget_Base {
 
         $settings = $this->get_settings_for_display();
 
-        echo "<div class='ratio ratio-16x9'><iframe style='padding: 0;' src='". $settings['Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write;' allowfullscreen></iframe></div>";
+        echo "<div><iframe style='padding: 0;' src='". $settings['Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write;' allowfullscreen></iframe></div>";
 	}
 	
 	protected function _content_template() {
