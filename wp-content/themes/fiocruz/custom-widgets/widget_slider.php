@@ -91,7 +91,7 @@ class widget_slider extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>
-        <section class="splide" aria-label="Beautiful Images">
+        <section id="splide" class="splide" aria-label="Beautiful Images">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
