@@ -86,6 +86,7 @@ define( 'WP_DEBUG', false );
 define( ‘WP_DEBUG_DISPLAY’, false );
 @ini_set( ‘display_errors’, 0 );
 define( ‘SCRIPT_DEBUG’, false );
+define('WP_MEMORY_LIMIT', '512M');
 
 /* Adicione valores personalizados entre esta linha até "Isto é tudo". */
 
