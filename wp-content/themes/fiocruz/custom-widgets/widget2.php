@@ -74,7 +74,7 @@ class My_Widget_2 extends Widget_Base {
 			'Blank',
 			[
 				'label' => esc_html__( 'Link blank?', 'elementor' ),
-				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'type' => Controls_Manager::SWITCHER,
 				'label_on' => esc_html__( 'Sim', 'elementor' ),
 				'label_off' => esc_html__( 'Não', 'elementor' ),
 				'return_value' => 'yes',
