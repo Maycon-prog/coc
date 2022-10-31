@@ -105,7 +105,7 @@ class widget_slider extends Widget_Base
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
 <?php
     }
 
