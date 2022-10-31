@@ -38,6 +38,8 @@ class My_Widget_1 extends Widget_Base {
 			]
 		);
 
+		$this->end_controls_section();
+
 		$this->start_controls_section(
 			'section_title2',
 			[
