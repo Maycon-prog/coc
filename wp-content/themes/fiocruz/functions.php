@@ -25,12 +25,3 @@ function theme_add_config()
 add_action('after_setup_theme', 'theme_add_config', 0);
 
 require_once("custom-widgets/my-widgets.php");
-
-function wp_body_classes( $classes )
-{
-    $classes[] = 'onkeydown="verificadorDeTeclas()"';
-
-    return $classes;
-}
-add_filter( 'body_class','wp_body_classes', 999 );
-

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function verificadorDeTeclas(){
+function verificadorDeTeclas(event){
     if(event.key == '2') {
         document.getElementById("menu-item-19").focus();
     } else {
