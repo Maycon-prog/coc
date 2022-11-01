@@ -25,8 +25,8 @@ function theme_add_config()
 
     add_theme_support('custom-logo', array(
         'width' => 238,
-        'height' => 106,
-        'flex-height' => true,
+        'height' => 80,
+        'flex-height' => false,
         'flex-width' => true
     ));
 
