@@ -208,8 +208,6 @@ header {
 
     .menu-header {
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
         flex-direction: row;
 
         .logo-menu {
@@ -451,5 +449,8 @@ header {
     .options-header,
     .logo-menu, .menu {
         display: none !important;
+    }
+    .menu-header{
+        justify-content: flex-end;
     }
 }
