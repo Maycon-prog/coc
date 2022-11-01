@@ -13,15 +13,19 @@ body {
     section {
         border: 1px solid white;
     }
+
     article {
         border: 1px solid white;
     }
+
     button {
         border: 1px solid white;
     }
+
     footer {
         border: 1px solid white;
     }
+
     header {
         border: 1px solid white;
     }
@@ -31,7 +35,7 @@ body {
         opacity: 1;
     }
 
-    .link  {
+    .link {
         a {
             text-decoration: underline;
         }
@@ -44,7 +48,7 @@ body {
     }
 }
 
-.titulo div h2{
+.titulo div h2 {
     color: var(--texto) !important;
 }
 
@@ -52,13 +56,11 @@ body {
     color: var(--texto);
 }
 
-.link a{
+.link a {
     color: var(--link);
 }
 
-dark-mode  {
-    
-}
+dark-mode {}
 
 .slide {
     background-color: var(--slide);
@@ -67,6 +69,220 @@ dark-mode  {
 footer {
     background-color: var(--footer);
 }
+
+
+
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px -2px rgb(0 0 0 / 30%);
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    padding-bottom: 1rem;
+    font-size: .8rem;
+
+    .options-header {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: -35px;
+
+        .div-options {
+            padding: 5px 10px;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            background-color: #fff;
+            margin-left: 0.5rem !important;
+
+            a {
+                text-decoration: none;
+            }
+
+            strong {
+                color: black;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+            }
+
+            .sub-font {
+                font-size: 10px;
+                text-decoration: none;
+            }
+
+            .normal-font {
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .soma-font {
+                font-size: 24px;
+                text-decoration: none;
+            }
+
+            .a-social {
+                font-size: 1rem;
+                background-color: #05C6B7;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                margin-left: 3px;
+                margin-right: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .icon {
+                font-size: 1rem;
+                width: 30px;
+                height: 30px;
+                margin-left: 3px;
+                margin-right: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .logo-menu {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .menu {
+            display: flex;
+            list-style-type: none;
+
+            li {
+                a {
+                    margin-left: 10px;
+                    text-decoration: none;
+                    color: black;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.menu-icon,
+.check-button {
+	cursor: pointer;
+	display: none;
+}
+.menu-icon .bar1, .menu-icon .bar2, .menu-icon .bar3 {
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #291c5d;
+    margin: 5px 0;
+    transition: 0.4s;
+
+}
+#menu-mobile{
+    background-color: #291c5d;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+    .close-button{
+        float: right;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .nav-menu-mobile > .menu-main-menu-container > .menu{
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        padding: 0;
+        font-size: 1.5rem;
+        li > a{
+            margin-left: 0px;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    .options-header-mobile{
+        display: flex;
+        flex-wrap: wrap;
+        .div-options-mobile{
+            padding: 5px 10px;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            background-color: #fff;
+            margin-right: 0.5rem !important;
+            margin-bottom: 0.5rem !important;
+            a{
+                text-decoration: none;
+            }
+            strong{
+                color: black;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+            }
+            .sub-font{
+                font-size: 10px;
+                text-decoration: none;
+            }
+            .normal-font{
+                font-size: 18px;
+                text-decoration: none;
+            }
+            .soma-font{
+                font-size: 24px;
+                text-decoration: none;
+            }
+            .a-social{
+                font-size: 1rem;
+                background-color: #05C6B7;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                margin-left: 3px;
+                margin-right: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .icon{
+                font-size: 1rem;
+                width: 30px;
+                height: 30px;
+                margin-left: 3px;
+                margin-right: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .splide {
     height: 430px;
@@ -85,7 +301,7 @@ footer {
         position: absolute;
         right: 35px;
         font-size: 25px;
-    } 
+    }
 }
 
 .next {
@@ -109,14 +325,14 @@ footer {
     top: 85% !important;
 }
 
-.slide-title{
+.slide-title {
     font-size: 1.5rem;
     text-align: center;
     padding: 10px;
     color: var(--texto);
 }
 
-.slide-content{
+.slide-content {
     padding: 10px 80px 10px 80px;
     color: var(--texto);
     font-size: 0.8rem;
