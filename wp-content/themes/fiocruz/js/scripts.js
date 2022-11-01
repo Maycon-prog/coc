@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function verificadorDeTeclas(event){
-    if(event.key == '2') {
-        document.getElementById("menu-item-19").focus();
+function contraste() {
+    if(document.getElementsByClassName('pagina').className == "dark-mode"){
+        document.getElementsByClassName('pagina').className = "light-mode";
     } else {
-        alert("deu ruim");
+        document.getElementsByClassName('pagina').className = "dark-mode";
     }
 }
 
