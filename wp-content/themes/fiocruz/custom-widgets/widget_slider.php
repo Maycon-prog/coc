@@ -7,12 +7,12 @@ class widget_slider extends Widget_Base
 
     public function get_name()
     {
-        return 'Slider'; // nome para usar no código
+        return 'slider'; // nome para usar no código
     }
 
     public function get_title()
     {
-        return 'Slider1'; // nome para o usuario
+        return 'Slider'; // nome para o usuario
     }
 
     public function get_icon()
@@ -22,7 +22,7 @@ class widget_slider extends Widget_Base
 
     public function get_categories()
     {
-        return ['basic'];
+        return ['widgets-personalizados'];
     }
 
     protected function _register_controls()
