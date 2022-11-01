@@ -84,9 +84,9 @@ class My_Widget_2 extends Widget_Base {
         $settings = $this->get_settings_for_display();
 
             if ($settings['Link']['is_external']) {
-                echo "<p>$settings[Antecede] <a href='". $settings['Link']['url'] ."' target='_blank' rel='noopener'>$settings[Texto] </a> $settings[Sucede]</p>";
+                echo "<p class='texto'>$settings[Antecede] <a class='link' href='". $settings['Link']['url'] ."' target='_blank' rel='noopener'>$settings[Texto] </a> $settings[Sucede]</p>";
             } else {
-                echo "<p>$settings[Antecede] <a href='". $settings['Link']['url'] ."'>$settings[Texto]</a> $settings[Sucede]</p>";
+                echo "<p class='texto'>$settings[Antecede] <a class='link' href='". $settings['Link']['url'] ."'>$settings[Texto]</a> $settings[Sucede]</p>";
             }
 	}
 	
