@@ -7,7 +7,7 @@ class widget_slider extends Widget_Base
 
     public function get_name()
     {
-        return 'Slider name';
+        return 'Slider1';
     }
 
     public function get_title()
