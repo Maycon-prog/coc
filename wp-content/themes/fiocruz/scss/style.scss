@@ -154,10 +154,11 @@ header {
 
             a {
                 text-decoration: none;
+                color: var(--link);
             }
 
             strong {
-                color: black;
+                color: var(--texto);
                 text-transform: uppercase;
                 font-size: 0.75rem;
             }
