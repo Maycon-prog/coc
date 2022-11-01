@@ -9,6 +9,10 @@ body {
     background-color: var(--fundo);
     color: var(--texto);
 }
+.d-flex{
+    display: flex !important;
+    align-items: center;
+}
 
 .dark-mode {
     section {
