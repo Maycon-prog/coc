@@ -88,7 +88,6 @@ class widget_slider extends Widget_Base
     {
 
         $settings = $this->get_settings_for_display();
-        var_dump($settings);
 ?>
         <section id="splide" class="splide" aria-label="Beautiful Images">
             <div class="splide__track">
