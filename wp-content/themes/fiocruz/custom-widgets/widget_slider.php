@@ -7,12 +7,12 @@ class widget_slider extends Widget_Base
 
     public function get_name()
     {
-        return 'Slider';
+        return 'Slider name';
     }
 
     public function get_title()
     {
-        return 'Slider';
+        return 'Slider title';
     }
 
     public function get_icon()
