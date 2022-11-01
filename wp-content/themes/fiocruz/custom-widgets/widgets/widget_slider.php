@@ -95,7 +95,7 @@ class widget_slider extends Widget_Base
 		$this->add_control(
 			'marker_color',
 			[
-				'label' => esc_html__( 'Color', 'elementor-list-widget' ),
+				'label' => esc_html__( 'Background', 'elementor-list-widget' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-list-widget-text::marker' => 'color: {{VALUE}};',
@@ -119,7 +119,7 @@ class widget_slider extends Widget_Base
                     ?>
                         <li class="splide__slide">
                             <h2 class="slide-title"><?=$settings['list'][$i]['list_title']?></h2>
-                            <?=$settings['list'][$i]['list_content']?>
+                            <p><?=$settings['list'][$i]['list_content']?></p>
                         </li>
                     <?php
                     }
