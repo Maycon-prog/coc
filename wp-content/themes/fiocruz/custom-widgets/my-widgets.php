@@ -13,10 +13,10 @@ class My_Elementor_Widgets {
 	}
 
 	protected function __construct() { 
-		require_once('widget1.php');
-		require_once('widget2.php');
-		require_once('widget3.php');
-		require_once('widget_slider.php');
+		require_once('widgets/widget1.php');
+		require_once('widgets/widget2.php');
+		require_once('widgets/widget3.php');
+		require_once('widgets/widget_slider.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	}
 
