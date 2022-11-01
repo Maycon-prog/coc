@@ -206,10 +206,15 @@ header {
     .menu-header {
         display: flex;
         flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
 
         .logo-menu {
             max-width: 100%;
             height: auto;
+        }
+        .legenda-header{
+            font-size: 1rem;
         }
     }
 
