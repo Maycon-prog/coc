@@ -209,6 +209,9 @@ header {
     .menu{
         display: flex;
         list-style-type: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 5px 0px;
 
         li {
             a {
