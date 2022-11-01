@@ -17,8 +17,18 @@ class My_Elementor_Widgets
 	protected function __construct()
 	{
 
-		foreach (glob(get_template_directory() . "custom-widgets/widgets/*.php") as $filename) {
-			require_once($filename);
+		$pasta = get_template_directory() . '/custom-widgets/widgets';
+
+		if (is_dir($pasta)) {
+			$diretorio = dir($pasta);
+
+			while (($arquivo = $diretorio->read()) !== false) {
+				require_once($arquivo);
+			}
+
+			$diretorio->close();
+		} else {
+			echo 'A pasta não existe.';
 		}
 		add_action('elementor/widgets/widgets_registered', [$this, 'register_widgets']);
 	}
