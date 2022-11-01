@@ -1,0 +1,19 @@
+:root {
+    --nav: $nav;
+    --slide: $slide;
+    --botoes-slide: $botoesSlide;
+    --link: $link;
+    --footer: $footer;
+    --texto: $texto;
+    --fundo: $fundo;
+}
+
+.dark-mode:root {
+    --nav: #000;
+    --slide: #000;
+    --botoes-slide: #000;
+    --link: #FFF;
+    --footer: #000;
+    --texto: #FFF;
+    --fundo: #000;
+}
