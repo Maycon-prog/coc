@@ -20,11 +20,6 @@ class My_Elementor_Widgets
 		foreach (glob(get_template_directory() . "custom-widgets/widgets/*.php") as $filename) {
 			require_once($filename);
 		}
-
-		require_once('widget1.php');
-		require_once('widget2.php');
-		require_once('widget3.php');
-		require_once('widget_slider.php');
 		add_action('elementor/widgets/widgets_registered', [$this, 'register_widgets']);
 	}
 
