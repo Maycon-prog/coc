@@ -97,14 +97,9 @@ class widget_slider extends Widget_Base
                     for ($i = 0; $i < count($settings['list']); $i++) {
                     ?>
                         <li class="splide__slide">
-                            <h2 class="slide-title"><?=$settings['list'][$i]?></h2>
-                            <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h2 class="slide-title"><?=$settings['list'][$i]['list_title']?></h2>
+                            <p class="slide-content"><?=$settings['list'][$i]['list_content']?></p>
                         </li>
-                        <li class="splide__slide">
-                            <h2 class="slide-title">Titulo do Slide 1</h2>
-                            <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </li>
-
                     <?php
                     }
                     ?>
