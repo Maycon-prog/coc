@@ -25,6 +25,23 @@ body {
     header {
         border: 1px solid white;
     }
+
+    svg {
+        filter: invert(100%);
+        opacity: 1;
+    }
+
+    .link  {
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .texto {
+        caption {
+            color: white;
+        }
+    }
 }
 
 .texto {
@@ -35,8 +52,8 @@ body {
     color: var(--link);
 }
 
-dark-mode .link a {
-    text-decoration: underline;
+dark-mode  {
+    
 }
 
 .slide {
