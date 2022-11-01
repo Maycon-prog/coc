@@ -13,19 +13,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function contraste() {   
     if(document.getElementById('pagina').className == "dark-mode"){
-        document.getElementById('pagina').className = "light-mode";
+        document.getElementById('pagina').classList.remove("dark-mode");
+        document.getElementById('pagina').classList.add("light-mode");
     } else {    
-        document.getElementById('pagina').className = "dark-mode";
+        document.getElementById('pagina').classList.add("dark-mode");
+        document.getElementById('pagina').classList.remove("light-mode");
     }
 }
 
 function tamanhoFont(tamanho) {
     if(tamanho == 'normal') {
-        document.getElementById('pagina').className = "";
+        document.getElementById('pagina').classList.remove("diminuiu");
+        document.getElementById('pagina').classList.remove("aumentou");
     } else if(tamanho == 'sub') {
-        document.getElementById('pagina').className = "diminuiu";
+        document.getElementById('pagina').classList.add("diminuiu");
+        document.getElementById('pagina').classList.remove("aumentou");
     } else {
-        document.getElementById('pagina').className = "aumentou";
+        document.getElementById('pagina').classList.add("aumentou");
+        document.getElementById('pagina').classList.remove("diminuiu");
     }
 }
 
