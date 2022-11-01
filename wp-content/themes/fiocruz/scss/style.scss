@@ -208,8 +208,9 @@ header {
 
     .menu-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: flex-end;
+        flex-direction: row;
 
         .logo-menu {
             max-width: 100%;
@@ -448,7 +449,7 @@ header {
 
     .nav-menu>.menu-main-menu-container,
     .options-header,
-    .logo-menu {
+    .logo-menu, .menu {
         display: none !important;
     }
 }
