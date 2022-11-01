@@ -29,60 +29,61 @@ class widget_slider extends Widget_Base
     {
 
         $this->start_controls_section(
-			'content_section',
-			[
-				'label' => esc_html__( 'Content', 'elementor' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
+            'content_section',
+            [
+                'label' => esc_html__('Content', 'elementor'),
+                'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+            ]
+        );
 
-		$repeater = new \Elementor\Repeater();
+        $repeater = new \Elementor\Repeater();
 
-		$repeater->add_control(
-			'list_title', [
-				'label' => esc_html__( 'Title', 'elementor' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'List Title' , 'elementor' ),
-				'label_block' => true,
-			]
-		);
+        $repeater->add_control(
+            'list_title',
+            [
+                'label' => esc_html__('Title', 'elementor'),
+                'type' => \Elementor\Controls_Manager::TEXT,
+                'default' => esc_html__('List Title', 'elementor'),
+                'label_block' => true,
+            ]
+        );
 
-		$repeater->add_control(
-			'list_content', [
-				'label' => esc_html__( 'Content', 'elementor' ),
-				'type' => \Elementor\Controls_Manager::WYSIWYG,
-				'default' => esc_html__( 'List Content' , 'elementor' ),
-				'show_label' => false,
-			]
-		);
+        $repeater->add_control(
+            'list_content',
+            [
+                'label' => esc_html__('Content', 'elementor'),
+                'type' => \Elementor\Controls_Manager::WYSIWYG,
+                'default' => esc_html__('List Content', 'elementor'),
+                'show_label' => false,
+            ]
+        );
 
-		$this->add_control(
-			'list',
-			[
-				'label' => esc_html__( 'Repeater List', 'elementor' ),
-				'type' => \Elementor\Controls_Manager::REPEATER,
-				'fields' => $repeater->get_controls(),
-				'default' => [
-					[
-						'list_title' => esc_html__( 'Slide #1', 'elementor' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elementor' ),
-					],
-					[
-						'list_title' => esc_html__( 'Slide #2', 'elementor' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elementor' ),
-					],
+        $this->add_control(
+            'list',
+            [
+                'label' => esc_html__('Repeater List', 'elementor'),
+                'type' => \Elementor\Controls_Manager::REPEATER,
+                'fields' => $repeater->get_controls(),
+                'default' => [
                     [
-						'list_title' => esc_html__( 'Slide #3', 'elementor' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elementor' ),
-					]
-				],
-				'title_field' => '{{{ list_title }}}',
-			]
-		);
+                        'list_title' => esc_html__('Slide #1', 'elementor'),
+                        'list_content' => esc_html__('Item content. Click the edit button to change this text.', 'elementor'),
+                    ],
+                    [
+                        'list_title' => esc_html__('Slide #2', 'elementor'),
+                        'list_content' => esc_html__('Item content. Click the edit button to change this text.', 'elementor'),
+                    ],
+                    [
+                        'list_title' => esc_html__('Slide #3', 'elementor'),
+                        'list_content' => esc_html__('Item content. Click the edit button to change this text.', 'elementor'),
+                    ]
+                ],
+                'title_field' => '{{{ list_title }}}',
+            ]
+        );
 
-		$this->end_controls_section();
-
-	}
+        $this->end_controls_section();
+    }
 
     protected function render()
     {
@@ -93,21 +94,23 @@ class widget_slider extends Widget_Base
             <div class="splide__track">
                 <ul class="splide__list">
                     <?php
-                        for ($i=0; $i < count($settings['list']); $i++) { 
-                            var_dump($settings['list'][$i]['list_title']);
-                        }
+                    for ($i = 0; $i < count($settings['list']); $i++) {
                     ?>
-                    <li class="splide__slide">
-                        <h2 class="slide-title">Titulo do Slide 1</h2>
-                        <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
-                    <li class="splide__slide">
-                        <h2 class="slide-title">Titulo do Slide 1</h2>
-                        <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
+                        <li class="splide__slide">
+                            <h2 class="slide-title"><?=$settings['list'][$i]?></h2>
+                            <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </li>
+                        <li class="splide__slide">
+                            <h2 class="slide-title">Titulo do Slide 1</h2>
+                            <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </li>
+
+                    <?php
+                    }
+                    ?>
                 </ul>
             </div>
-        </section> 
+        </section>
 <?php
     }
 
