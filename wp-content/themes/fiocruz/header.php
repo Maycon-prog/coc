@@ -41,7 +41,6 @@
                         }
                         ?>
                     </div>
-                    <div class="legenda-header">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</div>
                     <button onclick="button_menu('open');" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
@@ -49,6 +48,7 @@
                             <div class="bar3"></div>
                         </div>
                     </button>
+                    <div class="legenda-header">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</div>
                 </div>
             </div>
             <nav class="nav-menu">
