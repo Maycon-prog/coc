@@ -7,17 +7,17 @@ class widget_slider extends Widget_Base
 
     public function get_name()
     {
-        return 'Slider';
+        return 'Slider'; // nome para usar no código
     }
 
     public function get_title()
     {
-        return 'Slider1';
+        return 'Slider1'; // nome para o usuario
     }
 
     public function get_icon()
     {
-        return 'fa fa-font';
+        return 'eicon-slides'; // https://elementor.github.io/elementor-icons/
     }
 
     public function get_categories()
