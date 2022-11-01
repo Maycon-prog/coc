@@ -39,10 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function contraste() {
-    if(document.getElementsById('pagina').className == "dark-mode"){
-        document.getElementsById('pagina').className = "light-mode";
+    console.log(document.getElementById('pagina').className)
+    console.log(document.getElementById('pagina'))
+    
+    if(document.getElementById('pagina').className == "dark-mode"){
+        document.getElementById('pagina').className = "light-mode";
     } else {    
-        document.getElementsById('pagina').className = "dark-mode";
+        document.getElementById('pagina').className = "dark-mode";
     }
 }
 
