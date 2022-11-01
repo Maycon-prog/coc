@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function contraste() {
+    console.log(document.getElementsById('pagina').className)
+    console.log(document.getElementsById('pagina'))
+    
     if(document.getElementsById('pagina').className == "dark-mode"){
         document.getElementsById('pagina').className = "light-mode";
     } else {    
