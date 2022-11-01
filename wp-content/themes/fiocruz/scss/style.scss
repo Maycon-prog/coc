@@ -1,5 +1,4 @@
 @import 'variables.scss';
-@import 'colors.scss';
 
 * {
     margin: 0;
@@ -8,6 +7,14 @@
 body {
     background-color: var(--fundo);
     color: var(--texto);
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: var(--tamanhoTitulo);
+    }
+
+    * {
+        font-size: var(--tamanhoTexto);
+    }
 
     .link a {
         color: var(--link);

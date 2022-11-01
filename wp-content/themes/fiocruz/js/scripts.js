@@ -11,14 +11,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function contraste() {
-    console.log(document.getElementById('pagina').className)
-    console.log(document.getElementById('pagina'))
-    
+function contraste() {   
     if(document.getElementById('pagina').className == "dark-mode"){
         document.getElementById('pagina').className = "light-mode";
     } else {    
         document.getElementById('pagina').className = "dark-mode";
+    }
+}
+
+function tamanhoFont(tamanho) {
+    if(tamanho == 'normal') {
+        document.getElementById('pagina').className = "";
+    } else if(tamanho == 'sub') {
+        document.getElementById('pagina').className = "diminuiu";
+    } else {
+        document.getElementById('pagina').className = "aumentou";
     }
 }
 
