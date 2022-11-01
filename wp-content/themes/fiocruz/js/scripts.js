@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    if(sessionStorage.getItem('tema') == 'escuro') {
+        document.getElementById('pagina').classList.add("dark-mode");
+    }
+});
+
 function contraste() {   
     if(document.getElementById('pagina').className.includes("dark-mode")){
         document.getElementById('pagina').classList.remove("dark-mode");
@@ -18,6 +24,7 @@ function contraste() {
     } else {    
         document.getElementById('pagina').classList.add("dark-mode");
         document.getElementById('pagina').classList.remove("light-mode");
+        sessionStorage.setItem('tema', 'escuro');
     }
 }
 
