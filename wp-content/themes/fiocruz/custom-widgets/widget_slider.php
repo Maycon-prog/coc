@@ -5,86 +5,92 @@ namespace Elementor;
 class widget_slider extends Widget_Base
 {
 
-    public function get_name()
-    {
-        return 'Slider';
-    }
+    public function get_name() {
+		return 'arrow_repeater';
+	}
 
-    public function get_title()
-    {
-        return 'Slider';
-    }
+	public function get_title() {
+		return __( 'Arrow Repeater', 'elementor' );
+	}
 
-    public function get_icon()
-    {
-        return 'fa fa-font';
-    }
+	protected function _register_controls() {
 
-    public function get_categories()
-    {
-        return ['basic'];
-    }
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => __( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
 
-    protected function _register_controls()
-    {
+		$repeater = new \Elementor\Repeater();
 
-        $this->start_controls_section(
-            'section_title',
-            [
-                'label' => __('Content', 'elementor'),
-            ]
-        );
+		$repeater->add_control(
+			'list_image',
+			[
+				'label' => __( 'Image', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+			]
+		);
 
-        $this->add_control(
-            'Antecede',
-            [
-                'label' => __('Antecede', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira o texto que antecede o link:', 'elementor'),
-                'default' => '',
-            ]
-        );
+		$repeater->add_control(
+			'list_title', [
+				'label' => __( 'Title', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( 'List Title' , 'plugin-domain' ),
+				'label_block' => true,
+			]
+		);
 
-        $this->add_control(
-            'Link',
-            [
-                'label' => __('Link', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::URL,
-                'placeholder' => __('Insira um Link:', 'elementor'),
-                'default' => [
-                    'url' => '',
-                    'is_external' => false,
-                    'nofollow' => true,
-                    // 'custom_attributes' => '',
-                ],
-            ]
-        );
+		$repeater->add_control(
+			'list_content', [
+				'label' => __( 'Content', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+				'default' => __( 'List Content' , 'plugin-domain' ),
+				'show_label' => false,
+			]
+		);
+		$repeater->add_control(
+			'list_link', [
+				'label' => __( 'Link', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => __( '#' , 'plugin-domain' ),
+				'show_label' => true,
+			]
+		);
 
-        $this->add_control(
-            'Texto',
-            [
-                'label' => __('Texto', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira o texto do link:', 'elementor'),
-            ]
-        );
+		$this->add_control(
+			'list',
+			[
+				'label' => __( 'Repeater List', 'plugin-domain' ),
+				'type' => \Elementor\Controls_Manager::REPEATER,
+				'fields' => $repeater->get_controls(),
+				'default' => [
+					[
+						'list_image' => __( 'Item Image', 'plugin-domain' ),
+						'list_title' => __( 'Item Title', 'plugin-domain' ),
+						'list_content' => __( 'Item content. Click the edit button to change this text.', 'plugin-domain' ),
+						'list_link' => __( 'Link', 'plugin-domain' ),
 
-        $this->add_control(
-            'Sucede',
-            [
-                'label' => __('Sucede', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira o texto que sucede o link:', 'elementor'),
-                'default' => '',
-            ]
-        );
+					],
+					[
+						'list_image' => __( 'Item Image', 'plugin-domain' ),
+						'list_title' => __( 'Item Title', 'plugin-domain' ),
+						'list_content' => __( 'Item content. Click the edit button to change this text.', 'plugin-domain' ),
+						'list_link' => __( 'Link', 'plugin-domain' ),
+					],
+				],
+				'title_field' => '{{{ list_title }}}',
+			]
+		);
 
-        $this->end_controls_section();
-    }
+		$this->end_controls_section();
+
+	}
+
 
     protected function render()
     {
