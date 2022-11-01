@@ -29,62 +29,67 @@ class widget_slider extends Widget_Base
     {
 
         $this->start_controls_section(
-            'section_title',
-            [
-                'label' => __('Content', 'elementor'),
-            ]
-        );
+			'content_section',
+			[
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
 
-        $this->add_control(
-            'Antecede',
-            [
-                'label' => __('Antecede', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira o texto que antecede o link:', 'elementor'),
-                'default' => '',
-            ]
-        );
+		$repeater = new \Elementor\Repeater();
 
-        $this->add_control(
-            'Link',
-            [
-                'label' => __('Link', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::URL,
-                'placeholder' => __('Insira um Link:', 'elementor'),
-                'default' => [
-                    'url' => '',
-                    'is_external' => false,
-                    'nofollow' => true,
-                    // 'custom_attributes' => '',
-                ],
-            ]
-        );
+		$repeater->add_control(
+			'list_title', [
+				'label' => esc_html__( 'Title', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => esc_html__( 'List Title' , 'textdomain' ),
+				'label_block' => true,
+			]
+		);
 
-        $this->add_control(
-            'Texto',
-            [
-                'label' => __('Texto', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira o texto do link:', 'elementor'),
-            ]
-        );
+		$repeater->add_control(
+			'list_content', [
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+				'default' => esc_html__( 'List Content' , 'textdomain' ),
+				'show_label' => false,
+			]
+		);
 
-        $this->add_control(
-            'Sucede',
-            [
-                'label' => __('Sucede', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira o texto que sucede o link:', 'elementor'),
-                'default' => '',
-            ]
-        );
+		$repeater->add_control(
+			'list_color',
+			[
+				'label' => esc_html__( 'Color', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
+				],
+			]
+		);
 
-        $this->end_controls_section();
-    }
+		$this->add_control(
+			'list',
+			[
+				'label' => esc_html__( 'Repeater List', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::REPEATER,
+				'fields' => $repeater->get_controls(),
+				'default' => [
+					[
+						'list_title' => esc_html__( 'Title #1', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
+					],
+					[
+						'list_title' => esc_html__( 'Title #2', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
+					],
+				],
+				'title_field' => '{{{ list_title }}}',
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
 
     protected function render()
     {
