@@ -48,6 +48,7 @@
                             <div class="bar3"></div>
                         </div>
                     </button>
+                    <div class="legenda-header">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</div>
                 </div>
             </div>
             <nav class="nav-menu">
