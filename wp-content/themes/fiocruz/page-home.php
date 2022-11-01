@@ -3,7 +3,7 @@
 <?php the_content(); ?>
 
 <?php
-$pasta = 'custom-widgets/';
+$pasta = get_template_directory() . '/custom-widgets';
 
 if (is_dir($pasta)) {
     $diretorio = dir($pasta);
