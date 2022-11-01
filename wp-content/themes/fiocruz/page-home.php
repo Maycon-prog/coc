@@ -1,16 +1,19 @@
 <?php get_header(); ?>
 
 <?php the_content(); ?>
+<?php
+$pasta = 'custom-widgets/';
+
+ if(is_dir($pasta)){
+    $diretorio = dir($pasta);
+  while(($arquivo = $diretorio->read()) !== false)
+  {
+    echo '<a href='.$pasta.$arquivo.'>'.$arquivo.'</a><br />';
+  }
+  $diretorio->close();
+ }else{
+    echo 'A pasta não existe.';
+ }
+?>
 
 <?php get_footer(); ?>
-
-<?php
-$path = "/custom-widgets";
-$diretorio = dir($path);
-
-echo "Lista de Arquivos do diretório '<strong>".$path."</strong>':<br />";
-while($arquivo = $diretorio -> read()){
-echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />";
-}
-$diretorio -> close();
-?>
