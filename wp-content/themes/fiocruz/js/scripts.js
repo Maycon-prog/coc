@@ -49,12 +49,12 @@ function tamanhoFont(tamanho) {
     } else if(tamanho == 'sub') {
         document.getElementById('pagina').classList.add("diminuiu");
         document.getElementById('pagina').classList.remove("aumentou");
-        sessionStorage.setItem('fonte', 'aumentada');
+        sessionStorage.setItem('fonte', 'diminuida');
         
     } else {
         document.getElementById('pagina').classList.add("aumentou");
         document.getElementById('pagina').classList.remove("diminuiu");
-        sessionStorage.setItem('fonte', 'diminuida');
+        sessionStorage.setItem('fonte', 'aumentada');
     }
 }
 
