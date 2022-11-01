@@ -119,7 +119,7 @@ class widget_slider extends Widget_Base
                     ?>
                         <li class="splide__slide">
                             <h2 class="slide-title"><?=$settings['list'][$i]['list_title']?></h2>
-                            <p><?=$settings['list'][$i]['list_content']?></p>
+                            <p class="slide-content"><?=$settings['list'][$i]['list_content']?></p>
                         </li>
                     <?php
                     }
