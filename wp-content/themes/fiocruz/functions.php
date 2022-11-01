@@ -24,4 +24,18 @@ function theme_add_config()
 }
 add_action('after_setup_theme', 'theme_add_config', 0);
 
+
+function add_elementor_widget_categories($elements_manager)
+{
+
+    $elements_manager->add_category(
+        'widgets-personalizados',
+        [
+            'title' => esc_html__('Widgets Personalizados', 'elementor'),
+            'icon' => 'eicon-global-colors',
+        ]
+    );
+}
+add_action('elementor/elements/categories_registered', 'add_elementor_widget_categories');
+
 require_once("custom-widgets/my-widgets.php");
