@@ -7,6 +7,7 @@
 
 body {
     background-color: var(--fundo);
+    color: var(--texto);
 }
 .d-flex{
     display: flex !important;
@@ -100,8 +101,6 @@ body {
     color: var(--link);
 }
 
-dark-mode {}
-
 .slide {
     background-color: var(--slide);
 }
@@ -109,9 +108,6 @@ dark-mode {}
 footer {
     background-color: var(--footer);
 }
-
-
-
 
 header {
     width: 100%;
