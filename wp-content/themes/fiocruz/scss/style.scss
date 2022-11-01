@@ -133,7 +133,7 @@ footer {
 
 header {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--fundo);
     box-shadow: 0px 4px 4px -2px rgb(0 0 0 / 30%);
     font-size: .8rem;
 
@@ -149,7 +149,7 @@ header {
             border-right: 1px solid #ccc;
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
-            background-color: #fff;
+            background-color: var(--fundo);
             margin-left: 0.5rem !important;
 
             a {
