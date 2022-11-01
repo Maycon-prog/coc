@@ -12,56 +12,55 @@
 <body id="body" <?php body_class(); ?>>
     <div id="pade" class="site">
         <header>
-            <div class="container">
-                <div id="menu-desktop">
-                    <div class="options-header">
-                        <div class="div-options d-flex">
-                            <i class="icon bi-arrow-down-circle-fill"></i>
-                            <a href="#conteudo"><strong>Pular para conteúdo</strong></a>
-                        </div>
-                        <div class="div-options">
-                            <strong>Texto</strong>
-                            <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
-                            <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
-                            <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
-                        </div>
-                        <div class="div-options d-flex">
-                            <i class="icon bi bi-circle-half"></i>
-                            <a href="#" onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
-                        </div>
+            <div id="menu-desktop" class="container">
+                <div class="options-header">
+                    <div class="div-options d-flex">
+                        <i class="icon bi-arrow-down-circle-fill"></i>
+                        <a href="#conteudo"><strong>Pular para conteúdo</strong></a>
                     </div>
-                    <div class="menu-header">
-                        <div class="logo-menu">
-                            <?php
-                            if (has_custom_logo()) {
-                                the_custom_logo();
-                            } else {
-                            ?>
-                                <a href="<?php echo home_url('/') ?>"><span><?php bloginfo('name') ?></span></a>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                        <button onclick="button_menu('open');" class="check-button">
-                            <div class="menu-icon">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                            </div>
-                        </button>
+                    <div class="div-options">
+                        <strong>Texto</strong>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
                     </div>
-                    <nav class="nav-menu">
-                        <?php
-                        wp_nav_menu(
-                            array(
-                                'theme_location' => 'main_menu', // identificador do menu
-                                'depth' => 1 // limita submenus
-                            )
-                        )
-                        ?>
-                    </nav>
+                    <div class="div-options d-flex">
+                        <i class="icon bi bi-circle-half"></i>
+                        <a href="#" onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
+                    </div>
                 </div>
+                <div class="menu-header">
+                    <div class="logo-menu">
+                        <?php
+                        if (has_custom_logo()) {
+                            the_custom_logo();
+                        } else {
+                        ?>
+                            <a href="<?php echo home_url('/') ?>"><span><?php bloginfo('name') ?></span></a>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                    <button onclick="button_menu('open');" class="check-button">
+                        <div class="menu-icon">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </button>
+                </div>
+                <nav class="nav-menu">
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'main_menu', // identificador do menu
+                            'depth' => 1 // limita submenus
+                        )
+                    )
+                    ?>
+                </nav>
             </div>
+
 
 
             <div id="menu-mobile">
