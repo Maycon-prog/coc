@@ -9,6 +9,27 @@ body {
     background-color: var(--fundo);
 }
 
+.dark-mode {
+    div {
+        border: 1px solid white;
+    }
+    section {
+        border: 1px solid white;
+    }
+    article {
+        border: 1px solid white;
+    }
+    button {
+        border: 1px solid white;
+    }
+    footer {
+        border: 1px solid white;
+    }
+    header {
+        border: 1px solid white;
+    }
+}
+
 .texto {
     color: var(--texto);
 }
