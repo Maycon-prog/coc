@@ -205,21 +205,20 @@ header {
             max-width: 100%;
             height: auto;
         }
+    }
+    .menu-header-menu-container > ul{
+        display: flex;
+        list-style-type: none;
 
-        .menu-header-menu-container > ul{
-            display: flex;
-            list-style-type: none;
+        li {
+            a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: black;
+            }
 
-            li {
-                a {
-                    margin-left: 10px;
-                    text-decoration: none;
-                    color: black;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
