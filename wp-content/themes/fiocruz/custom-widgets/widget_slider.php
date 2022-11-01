@@ -83,6 +83,27 @@ class widget_slider extends Widget_Base
         );
 
         $this->end_controls_section();
+
+        $this->start_controls_section(
+			'style_marker_section',
+			[
+				'label' => esc_html__( 'Marker Style', 'elementor-list-widget' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_control(
+			'marker_color',
+			[
+				'label' => esc_html__( 'Color', 'elementor-list-widget' ),
+				'type' => \Elementor\Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .elementor-list-widget-text::marker' => 'color: {{VALUE}};',
+				],
+			]
+		);
+
+        $this->end_controls_section();
     }
 
     protected function render() 
@@ -98,7 +119,7 @@ class widget_slider extends Widget_Base
                     ?>
                         <li class="splide__slide">
                             <h2 class="slide-title"><?=$settings['list'][$i]['list_title']?></h2>
-                            <p class="slide-content"><?=$settings['list'][$i]['list_content']?></p>
+                            <?=$settings['list'][$i]['list_content']?>
                         </li>
                     <?php
                     }
