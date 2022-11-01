@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function contraste() {
-    if(document.getElementsByClassName('pagina').className == "dark-mode"){
-        document.getElementsByClassName('pagina').className = "light-mode";
-    } else {
-        document.getElementsByClassName('pagina').className = "dark-mode";
+    if(document.getElementsById('pagina').className == "dark-mode"){
+        document.getElementsById('pagina').className = "light-mode";
+    } else {    
+        document.getElementsById('pagina').className = "dark-mode";
     }
 }
 
