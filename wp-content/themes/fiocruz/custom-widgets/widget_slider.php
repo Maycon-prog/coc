@@ -93,6 +93,11 @@ class widget_slider extends Widget_Base
         <section id="splide" class="splide" aria-label="Beautiful Images">
             <div class="splide__track">
                 <ul class="splide__list">
+                    <?php
+                        for ($i=0; $i < count($settings['list']); $i++) { 
+                            var_dump($settings['list'][$i]['list_title']);
+                        }
+                    ?>
                     <li class="splide__slide">
                         <h2 class="slide-title">Titulo do Slide 1</h2>
                         <p class="slide-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
