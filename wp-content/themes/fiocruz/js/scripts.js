@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function contraste() {
-    console.log(document.getElementsById('pagina').className)
-    console.log(document.getElementsById('pagina'))
+    console.log(document.getElementById('pagina').className)
+    console.log(document.getElementById('pagina'))
     
-    if(document.getElementsById('pagina').className == "dark-mode"){
-        document.getElementsById('pagina').className = "light-mode";
+    if(document.getElementById('pagina').className == "dark-mode"){
+        document.getElementById('pagina').className = "light-mode";
     } else {    
-        document.getElementsById('pagina').className = "dark-mode";
+        document.getElementById('pagina').className = "dark-mode";
     }
 }
 
