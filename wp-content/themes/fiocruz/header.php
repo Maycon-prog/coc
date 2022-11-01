@@ -25,7 +25,7 @@
                         </div>
                         <div class="div-options d-flex">
                             <i class="icon bi bi-circle-half"></i>
-                            <a href="#" onclick="constraste()" class="contraste"><strong>Alto Contraste</strong></a>
+                            <a href="#" onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
                         </div>
                     </div>
                     <div class="menu-header">
