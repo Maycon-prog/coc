@@ -31,7 +31,7 @@ class widget_slider extends Widget_Base
         $this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'textdomain' ),
+				'label' => esc_html__( 'Content', 'elementor' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -40,48 +40,41 @@ class widget_slider extends Widget_Base
 
 		$repeater->add_control(
 			'list_title', [
-				'label' => esc_html__( 'Title', 'textdomain' ),
+				'label' => esc_html__( 'Title', 'elementor' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'List Title' , 'textdomain' ),
+				'default' => esc_html__( 'List Title' , 'elementor' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
 			'list_content', [
-				'label' => esc_html__( 'Content', 'textdomain' ),
+				'label' => esc_html__( 'Content', 'elementor' ),
 				'type' => \Elementor\Controls_Manager::WYSIWYG,
-				'default' => esc_html__( 'List Content' , 'textdomain' ),
+				'default' => esc_html__( 'List Content' , 'elementor' ),
 				'show_label' => false,
-			]
-		);
-
-		$repeater->add_control(
-			'list_color',
-			[
-				'label' => esc_html__( 'Color', 'textdomain' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
-				],
 			]
 		);
 
 		$this->add_control(
 			'list',
 			[
-				'label' => esc_html__( 'Repeater List', 'textdomain' ),
+				'label' => esc_html__( 'Repeater List', 'elementor' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'list_title' => esc_html__( 'Title #1', 'textdomain' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
+						'list_title' => esc_html__( 'Slide #1', 'elementor' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elementor' ),
 					],
 					[
-						'list_title' => esc_html__( 'Title #2', 'textdomain' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
+						'list_title' => esc_html__( 'Slide #2', 'elementor' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elementor' ),
 					],
+                    [
+						'list_title' => esc_html__( 'Slide #3', 'elementor' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'elementor' ),
+					]
 				],
 				'title_field' => '{{{ list_title }}}',
 			]
@@ -95,6 +88,7 @@ class widget_slider extends Widget_Base
     {
 
         $settings = $this->get_settings_for_display();
+        var_dump($settings);
 ?>
         <section id="splide" class="splide" aria-label="Beautiful Images">
             <div class="splide__track">
