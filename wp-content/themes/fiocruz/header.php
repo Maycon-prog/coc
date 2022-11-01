@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> id="pagina">
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
 </head>
-<body style="zoom: 1.0;" id="body" <?php body_class(); ?>>
+<body id="body" <?php body_class(); ?>>
     <div id="pade" class="site">
         <header>
             <div class="container">
@@ -16,22 +16,15 @@
                             <i class="icon bi-arrow-down-circle-fill"></i>
                             <a href="#apresentacao"><strong>Pular para conteúdo</strong></a>
                         </div>
-                        <div class="div-options d-flex">
-                            <strong>Na Web</strong>
-                            <a class="a-social" target="_BLACK" href="https://twitter.com/fiocruz"><i class="bi bi-twitter"></i></a>
-                            <a class="a-social" target="_BLACK" href="https://www.facebook.com/oficialfiocruz/"><i class="bi bi-facebook"></i></a>
-                            <a class="a-social" target="_BLACK" href="https://www.instagram.com/oficialfiocruz/"><i class="bi bi-instagram"></i></a>
-                            <a class="a-social" target="_BLACK" href="https://www.youtube.com/user/fundacaooswaldocruz"><i class="bi bi-youtube"></i></a>
-                        </div>
                         <div class="div-options">
                             <strong>Texto</strong>
-                            <a onclick="font_size('sub')" href="#" class="sub-font">A</a>
-                            <a onclick="font_size('normal')" href="#" class="normal-font">A</a>
-                            <a onclick="font_size('soma')" href="#" class="soma-font">A</a>
+                            <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
+                            <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
+                            <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
                         </div>
                         <div class="div-options d-flex">
                             <i class="icon bi bi-circle-half"></i>
-                            <a href="#" class="contraste"><strong>Alto Contraste</strong></a>
+                            <a href="#" onclick="constraste()" class="contraste"><strong>Alto Contraste</strong></a>
                         </div>
                     </div>
                     <div class="menu-header">
