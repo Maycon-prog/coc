@@ -5,7 +5,7 @@
 <?php get_footer(); ?>
 
 <?php
-$path = "/";
+$path = "/custom-widgets";
 $diretorio = dir($path);
 
 echo "Lista de Arquivos do diretório '<strong>".$path."</strong>':<br />";
