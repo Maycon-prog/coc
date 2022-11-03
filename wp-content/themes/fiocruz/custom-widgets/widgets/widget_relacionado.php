@@ -59,7 +59,7 @@ class widget_relacionado extends Widget_Base
     protected function render()
     {
 ?>
-        <article class='relacionado' style='cursor: pointer'>
+        <article class='relacionado d-flex'>
             <?php
             for ($i = 1; $i < 5; $i++) {
                 if (isset(get_field("post_relacionado$i")->ID)) {
