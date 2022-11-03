@@ -1,6 +1,6 @@
 <?php
 
-namespace Elementor;
+namespace Elementor; 
 
 class widget_relacionado1 extends Widget_Base
 {

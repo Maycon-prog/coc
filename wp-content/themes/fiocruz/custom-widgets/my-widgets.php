@@ -23,7 +23,7 @@ class My_Elementor_Widgets {
 		require_once('widgets/widget_relacionado4.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
 	} 
-
+ 
 	public function register_widgets() {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_1() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_2() );

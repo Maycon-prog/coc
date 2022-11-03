@@ -2,7 +2,7 @@
 
 namespace Elementor;
 
-class widget_relacionado4 extends Widget_Base
+class widget_relacionado4 extends Widget_Base 
 {
 
     public function get_name()
