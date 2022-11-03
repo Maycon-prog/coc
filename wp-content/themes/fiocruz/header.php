@@ -17,7 +17,7 @@
                 <div class="options-header">
                     <div class="div-options d-flex">
                         <i class="icon bi-arrow-down-circle-fill"></i>
-                        <a href="#conteudo" accesskey="1"><strong>Pular para conteúdo</strong></a>
+                        <a href="#conteudo" accesskey="1"><strong>Pular para conteúdo [1]</strong></a>
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
@@ -27,7 +27,7 @@
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a href="#" onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
+                        <a href="#" onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
                     </div>
                 </div>
                 <div class="menu-header">
