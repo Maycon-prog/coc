@@ -34,6 +34,29 @@ function theme_add_config()
 }
 add_action('after_setup_theme', 'theme_add_config', 0);
 
+function mytheme_customize_register( $wp_customize ) {
+    //All our sections, settings, and controls will be added here
+
+    $wp_customize->add_section( 'my_site_logo' , array(
+        'title'      => __( 'My Site Logo', 'mytheme' ),
+        'priority'   => 30,
+    ) );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'logo',
+            array(
+               'label'      => __( 'Upload a logo', 'theme_name' ),
+               'section'    => 'my_site_logo',
+               'settings'   => 'my_site_logo_id' 
+            )
+        )
+    );
+
+}
+add_action( 'customize_register', 'mytheme_customize_register' );
+
 
 function add_elementor_widget_categories($elements_manager)
 {
