@@ -450,6 +450,10 @@ header {
     text-align: justify;
 }
 
+footer {
+    background-color: var(--footer) !important;
+}
+
 
 // quando for menor que 992
 @media (max-width: 992px) {
