@@ -118,7 +118,7 @@ class widget_slider extends Widget_Base
                     for ($i = 0; $i < count($settings['list']); $i++) {
                     ?>
                         <li class="splide__slide">
-                            <h1 class="slide-title texto"><?=$settings['list'][$i]['list_title']?></h1>
+                            <h4 class="slide-title texto"><?=$settings['list'][$i]['list_title']?></h4>
                             <p class="slide-content texto"><?=$settings['list'][$i]['list_content']?></p>
                         </li>
                     <?php
