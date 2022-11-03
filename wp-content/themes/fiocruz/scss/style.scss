@@ -103,6 +103,10 @@ body {
         opacity: 1;
     }
 
+    .logo-menu {
+        filter: invert(100%);
+    }
+
     .link {
         a {
             text-decoration: underline;
@@ -206,6 +210,7 @@ header {
             max-width: 100%;
             height: auto;
         }
+
         .legenda-header{
             font-size: 1rem;
         }
