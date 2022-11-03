@@ -443,7 +443,9 @@ header {
         display: none !important; 
     }
 
-    .menu{
-        flex-direction: column !important;
+    .nav-menu-mobile{
+        .menu{
+            flex-direction: column !important;
+        }
     }
 }
