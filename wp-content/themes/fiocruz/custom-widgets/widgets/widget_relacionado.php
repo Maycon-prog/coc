@@ -32,13 +32,15 @@ class widget_relacionado extends Widget_Base
     protected function render()
     {
         if (isset(get_field("post_relacionado1")->ID)) {
+
             $post_id = get_field("post_relacionado1")->ID;
+            $post_link = get_field("post_relacionado1");
             $titulo = get_the_title($post_id);
             $thumbnail = get_the_post_thumbnail_url($post_id);
 ?>
             <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
             <div class="d-flex titulo-relacionado">
-                <h2><?php echo $titulo ?></h2>
+                <a href="<?php print_r($post_link)?>"><?php echo $titulo ?></a>
                 <i class="bi bi-arrow-right"></i>
             </div>
 
