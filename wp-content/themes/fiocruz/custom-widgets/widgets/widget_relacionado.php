@@ -58,7 +58,7 @@ class widget_relacionado extends Widget_Base
 
     protected function render()
     {
-        $value = get_field( "post_relacionado1" )->ID;
+        $value = get_field( "post_relacionado1" );
         print_r($value);
 ?>
 
