@@ -59,7 +59,7 @@ class widget_relacionado extends Widget_Base
     protected function render()
     {
 ?>
-        <article class='card col-3' style='cursor: pointer'>
+        <article class='relacionado' style='cursor: pointer'>
             <?php
             for ($i = 1; $i < 5; $i++) {
                 if (isset(get_field("post_relacionado$i")->ID)) {
@@ -67,7 +67,7 @@ class widget_relacionado extends Widget_Base
                     $titulo = get_the_title($post_id);
                     $thumbnail = get_the_post_thumbnail_url($post_id);
             ?>
-                    <div>
+                    <div class="bloco-relacionado">
                         <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
                         <h2 class="titulo-relacionado"><?php echo $titulo ?></h2>
                     </div>
