@@ -30,7 +30,7 @@ function theme_add_config()
         'flex-width' => true
     ));
 
-    add_theme_support('custom-logo-dark', array(
+    add_theme_support('custom-logo', array(
         'width' => 238,
         'height' => 80,
         'flex-height' => false,
