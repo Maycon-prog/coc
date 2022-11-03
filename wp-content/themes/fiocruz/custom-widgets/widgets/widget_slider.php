@@ -81,55 +81,7 @@ class widget_slider extends Widget_Base
                 'title_field' => '{{{ list_title }}}',
             ]
         );
-
-        $this->add_control(
-            'texto',
-            [
-                'label' => __('texto', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Insira um texto alternativo pro vídeo:', 'elementor'),
-                'default' => 'vídeo externo da fiocruz',
-            ]
-        );
-
-        $this->add_control(
-            'Link',
-            [
-                'label' => __('Link', 'elementor'),
-                'label_block' => true,
-                'type' => Controls_Manager::URL,
-                'placeholder' => __('Insira o link embed do vídeo:', 'elementor'),
-                'default' => [
-                    'url' => 'https://www.youtube.com/embed/9_V-1mM1j1c',
-                    'is_external' => false,
-                    'nofollow' => true,
-                    // 'custom_attributes' => '',
-                ],
-            ]
-        );
-
-        $this->end_controls_section();
-
-        $this->start_controls_section(
-            'style_marker_section',
-            [
-                'label' => esc_html__('Marker Style', 'elementor-list-widget'),
-                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-            ]
-        );
-
-        $this->add_control(
-            'marker_color',
-            [
-                'label' => esc_html__('Background', 'elementor-list-widget'),
-                'type' => \Elementor\Controls_Manager::COLOR,
-                'selectors' => [
-                    '{{WRAPPER}} .elementor-list-widget-text::marker' => 'color: {{VALUE}};',
-                ],
-            ]
-        );
-
+        
         $this->end_controls_section();
     }
 
@@ -138,8 +90,6 @@ class widget_slider extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>
-        <section class='d-flex'>
-            <?php echo "<div class='ratio ratio-16x9'><iframe style='padding: 0;' src='". $settings[' Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write;' allowfullscreen></iframe></div>"; ?>
             <div id="splide" data-splide='{"type":"loop","perPage":1}' class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
@@ -156,7 +106,6 @@ class widget_slider extends Widget_Base
                     </ul>
                 </div>
             </div>
-        </section>
 
 <?php
     }
