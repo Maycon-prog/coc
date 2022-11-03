@@ -34,7 +34,7 @@ class widget_relacionado extends Widget_Base
         if (isset(get_field("post_relacionado1")->ID)) {
 
             $post_id = get_field("post_relacionado1")->ID;
-            $post_link = get_field("post_relacionado1");
+            $post_link = get_permalink($post_id);
             $titulo = get_the_title($post_id);
             $thumbnail = get_the_post_thumbnail_url($post_id);
 ?>
