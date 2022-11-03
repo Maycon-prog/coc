@@ -32,6 +32,17 @@ class widget_relacionado1 extends Widget_Base
     protected function render()
     {
 ?>
+        <?php
+        $existe = false;
+        for ($i = 1; $i < 5; $i++) {
+            if (isset(get_field("post_relacionado$i")->ID)) {
+                $existe = true;
+            }
+        }
+        if(!$existe){
+            echo "<h2 class='text-center'>Conteudo Relacionado</h2>";
+        }
+        ?>
         <div class="d-flex">
             <?php
             for ($i = 1; $i < 5; $i++) {
