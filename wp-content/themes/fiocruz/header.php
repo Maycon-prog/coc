@@ -69,7 +69,7 @@
 
             <div id="menu-mobile">
                 <button onclick="button_menu('close');" class="close-button"><i class="bi bi-x-circle"></i></button>
-                
+                <h2 class="legenda-mobile">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h2>
                 <div class="menu-header-mobile">
                     <nav class="nav-menu-mobile">
                         <?php
