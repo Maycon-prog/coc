@@ -83,31 +83,31 @@ class widget_slider extends Widget_Base
         );
 
         $this->add_control(
-			'texto',
-			[
-				'label' => __( 'texto', 'elementor' ),
-				'label_block' => true,
-				'type' => Controls_Manager::TEXT,
-				'placeholder' => __( 'Insira um texto alternativo pro vídeo:', 'elementor' ),
+            'texto',
+            [
+                'label' => __('texto', 'elementor'),
+                'label_block' => true,
+                'type' => Controls_Manager::TEXT,
+                'placeholder' => __('Insira um texto alternativo pro vídeo:', 'elementor'),
                 'default' => 'vídeo externo da fiocruz',
-			]
-		);
+            ]
+        );
 
-		$this->add_control(
-			'Link',
-			[
-				'label' => __( 'Link', 'elementor' ),
-				'label_block' => true,
-				'type' => Controls_Manager::URL,
-				'placeholder' => __( 'Insira o link embed do vídeo:', 'elementor' ),
+        $this->add_control(
+            'Link',
+            [
+                'label' => __('Link', 'elementor'),
+                'label_block' => true,
+                'type' => Controls_Manager::URL,
+                'placeholder' => __('Insira o link embed do vídeo:', 'elementor'),
                 'default' => [
-					'url' => 'https://www.youtube.com/embed/9_V-1mM1j1c',
-					'is_external' => false,
-					'nofollow' => true,
-					// 'custom_attributes' => '',
-				],
-			]
-		);
+                    'url' => 'https://www.youtube.com/embed/9_V-1mM1j1c',
+                    'is_external' => false,
+                    'nofollow' => true,
+                    // 'custom_attributes' => '',
+                ],
+            ]
+        );
 
         $this->end_controls_section();
 
@@ -137,24 +137,27 @@ class widget_slider extends Widget_Base
     {
 
         $settings = $this->get_settings_for_display();
-        echo "<div class='ratio ratio-16x9'><iframe style='padding: 0;' src='". $settings['Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write;' allowfullscreen></iframe></div>";
-?>      
-        <section id="splide" data-splide='{"type":"loop","perPage":1}' class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <?php
-                    for ($i = 0; $i < count($settings['list']); $i++) {
-                    ?>
-                        <li class="splide__slide">
-                            <h2 class="slide-title texto"><?= $settings['list'][$i]['list_title'] ?></h2>
-                            <p class="slide-content texto"><?= $settings['list'][$i]['list_content'] ?></p>
-                        </li>
-                    <?php
-                    }
-                    ?>
-                </ul>
+?>
+        <section class='d-flex'>
+            <?php echo "<div class='ratio ratio-16x9'><iframe style='padding: 0;' src='". $settings[' Link']['url'] ."' title='YouTube video player' frameborder='0' alt='$settings[texto]' allow='accelerometer; autoplay; clipboard-write;' allowfullscreen></iframe></div>"; ?>
+            <div id="splide" data-splide='{"type":"loop","perPage":1}' class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <?php
+                        for ($i = 0; $i < count($settings['list']); $i++) {
+                        ?>
+                            <li class="splide__slide">
+                                <h2 class="slide-title texto"><?= $settings['list'][$i]['list_title'] ?></h2>
+                                <p class="slide-content texto"><?= $settings['list'][$i]['list_content'] ?></p>
+                            </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
             </div>
         </section>
+
 <?php
     }
 
