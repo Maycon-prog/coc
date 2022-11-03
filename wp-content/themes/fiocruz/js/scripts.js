@@ -71,11 +71,3 @@ function button_menu(action){
         default: alert("Informe o action");
     }
 }
-
-// eventos do front:
-document.getElementById("open").onclick = button_menu('open');
-document.getElementById("close").onclick = button_menu('close');
-document.getElementById("sub").onclick = tamanhoFont('sub');
-document.getElementById("normal").onclick = tamanhoFont('normal');
-document.getElementById("soma").onclick = tamanhoFont('soma');
-document.getElementsByClassName("contraste").onclick = contraste();
