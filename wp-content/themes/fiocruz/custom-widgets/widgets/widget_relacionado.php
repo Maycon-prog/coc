@@ -37,8 +37,8 @@ class widget_relacionado extends Widget_Base
             $thumbnail = get_the_post_thumbnail_url($post_id);
 ?>
             <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
-            <div class="d-flex">
-                <h2 class="titulo-relacionado"><?php echo $titulo ?></h2>
+            <div class="d-flex titulo-relacionado">
+                <h2><?php echo $titulo ?></h2>
                 <i class="bi bi-arrow-right"></i>
             </div>
 
