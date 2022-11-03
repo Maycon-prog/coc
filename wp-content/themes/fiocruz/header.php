@@ -41,6 +41,18 @@
                         }
                         ?>
                     </div>
+
+                    <div class="logo-menu">
+                        <?php
+                        if (has_custom_logo()) {
+                            the_custom_logo();
+                        } else {
+                        ?>
+                            <a href="<?php echo home_url('/') ?>"><span><?php bloginfo('name') ?></span></a>
+                        <?php
+                        }
+                        ?>
+                    </div>
                     <button onclick="button_menu('open');" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
