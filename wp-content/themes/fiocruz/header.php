@@ -96,3 +96,4 @@
                 </div>
             </div>
         </header>
+        <noscript>Essa página precisa de javascript para funcionar!</noscript>
