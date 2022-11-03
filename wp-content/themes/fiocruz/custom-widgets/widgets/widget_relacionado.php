@@ -60,7 +60,8 @@ class widget_relacionado extends Widget_Base
     {
 
         $settings = $this->get_settings_for_display();
-        print_r($settings);
+        $value = get_field( "post_relacionado1" );
+        print_r($value)
 ?>
 
 <?php
