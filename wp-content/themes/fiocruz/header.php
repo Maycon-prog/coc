@@ -85,13 +85,13 @@
                 <div class="options-header-mobile">
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey="0">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a href="#" class="contraste"><strong>Alto Contraste</strong></a>
+                        <a onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
                     </div>
                 </div>
             </div>
