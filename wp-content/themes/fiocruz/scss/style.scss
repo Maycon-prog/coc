@@ -414,9 +414,6 @@ header {
 .textao {
     text-align: justify;
 }
-.menu-mobile{
-    display: none;
-}
 
 
 // quando for menor que 992
@@ -444,5 +441,9 @@ header {
     }
     .legenda-header{
         display: none !important; 
+    }
+
+    .nav-menu-mobile > .menu{
+        flex-direction: column !important;
     }
 }
