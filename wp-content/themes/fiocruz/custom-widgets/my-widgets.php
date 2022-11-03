@@ -17,16 +17,22 @@ class My_Elementor_Widgets {
 		require_once('widgets/widget2.php');
 		require_once('widgets/widget3.php');
 		require_once('widgets/widget_slider.php');
-		require_once('widgets/widget_relacionado.php');
+		require_once('widgets/widget_relacionado1.php');
+		require_once('widgets/widget_relacionado2.php');
+		require_once('widgets/widget_relacionado3.php');
+		require_once('widgets/widget_relacionado4.php');
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
-	}
-
+	} 
+ 
 	public function register_widgets() {
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_1() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_2() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_3() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_slider() );
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_relacionado() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_relacionado1() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_relacionado2() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_relacionado3() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_relacionado4() );
 	}
 
 }

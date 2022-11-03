@@ -131,10 +131,6 @@ body {
 .slide {
     background-color: var(--slide);
 }
-
-footer {
-    background-color: var(--footer);
-}
 .contraste{
     cursor: pointer;
 }
@@ -353,9 +349,25 @@ header {
 
 
 
+.titulo-relacionado{
+    background-color: #ccc;
+    margin-top: 5px;
+    padding: 5px;
+    justify-content: space-between;
+    a{
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+    }
+    i{
+        font-size: 3rem;
+    }
+}
 
-
-
+.img-relacionado{
+    height: 350px;
+    background-size: cover;
+}
 
 .splide {
     height: 430px;
@@ -416,11 +428,6 @@ header {
 
 .textao {
     text-align: justify;
-}
-
-.img-relacionado{
-    height: 400px;
-    background-size: cover;
 }
 
 
