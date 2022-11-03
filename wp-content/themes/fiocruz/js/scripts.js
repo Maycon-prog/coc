@@ -58,3 +58,17 @@ function tamanhoFont(tamanho) {
     }
 }
 
+function button_menu(action){
+    switch (action) {
+        case 'open':
+            document.getElementById('menu-mobile').style.display = 'block';
+            document.getElementById('menu-desktop').style.display = 'none';   
+        break;
+        case 'close':
+            document.getElementById('menu-mobile').style.display = 'none';
+            document.getElementById('menu-desktop').style.display = 'block'; 
+        break;
+        default: alert("Informe o action");
+    }
+}
+
