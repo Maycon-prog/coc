@@ -21,9 +21,9 @@
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey=" ">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
