@@ -31,24 +31,47 @@ class widget_relacionado1 extends Widget_Base
 
     protected function render()
     {
+?>
+        <?php
+        $existe = false;
         for ($i = 1; $i < 5; $i++) {
             if (isset(get_field("post_relacionado$i")->ID)) {
-
-                $post_id = get_field("post_relacionado$i")->ID;
-                $post_link = get_permalink($post_id);
-                $titulo = get_the_title($post_id);
-                $thumbnail = get_the_post_thumbnail_url($post_id);
-?>
-                <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
-                <div class="d-flex titulo-relacionado">
-                    <a href="<?php print_r($post_link) ?>"><?php echo $titulo ?></a>
-                    <i class="bi bi-arrow-right"></i>
-                </div>
-
-<?php
+                $existe = true;
             }
         }
+        if(!$existe){
+            echo "<h2 class='text-center'>Conteudo Relacionado</h2>";
+        }
+        ?>
+        <div class="d-flex">
+            <?php
+            for ($i = 1; $i < 5; $i++) {
+                if (isset(get_field("post_relacionado$i")->ID)) {
+
+                    $post_id = get_field("post_relacionado$i")->ID;
+                    $post_link = get_permalink($post_id);
+                    $titulo = get_the_title($post_id);
+                    $thumbnail = get_the_post_thumbnail_url($post_id);
+            ?>
+                    <div class="bloco-relacionado">
+                        <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
+                        <div class="d-flex titulo-relacionado">
+                            <a href="<?php print_r($post_link) ?>"><?php echo $titulo ?></a>
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+
+
+            <?php
+                }
+            }
+            ?>
+        </div>
+<?php
     }
+
+
+
 
     protected function _content_template()
     {
