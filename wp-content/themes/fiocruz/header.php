@@ -17,7 +17,7 @@
                 <div class="options-header">
                     <div class="div-options d-flex">
                         <i class="icon bi-arrow-down-circle-fill"></i>
-                        <a href="#conteudo"><strong>Pular para conteúdo</strong></a>
+                        <a href="#conteudo" accesskey="1"><strong>Pular para conteúdo</strong></a>
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
