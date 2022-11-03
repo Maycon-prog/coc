@@ -111,7 +111,7 @@ class widget_slider extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>      
-        <section style="background-color: <?php echo $settings['marker_color'] ?>" id="splide" data-splide='{"type":"loop","perPage":1}' class="splide">
+        <section id="splide" data-splide='{"type":"loop","perPage":1}' class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
                     <?php
