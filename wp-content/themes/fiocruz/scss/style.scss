@@ -135,7 +135,8 @@ body {
 footer {
     background-color: var(--footer);
 }
-.contraste{
+
+.contraste {
     cursor: pointer;
 }
 
@@ -209,7 +210,8 @@ header {
             max-width: 100%;
             height: auto;
         }
-        .legenda-header{
+
+        .legenda-header {
             font-size: 1rem;
         }
     }
@@ -266,7 +268,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
-    padding: 20px; 
+    padding: 20px;
     z-index: 1001;
     display: none;
 
@@ -433,19 +435,19 @@ header {
 
     .nav-menu,
     .options-header,
-    .logo-menu{
+    .logo-menu {
         display: none !important;
     }
-    .menu-header{
+
+    .menu-header {
         justify-content: flex-end;
     }
-    .legenda-header{
-        display: none !important; 
+
+    .legenda-header {
+        display: none !important;
     }
 
-    .nav-menu-mobile{
-        .menu{
-            flex-direction: column !important;
-        }
+    .nav-menu-mobile > .menu-header-menu-container> .menu{
+        flex-direction: column !important;
     }
 }
