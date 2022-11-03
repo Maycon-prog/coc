@@ -93,7 +93,7 @@ class widget_slider extends Widget_Base
         );
 
         $this->add_control(
-            'bgcolor',
+            'bgColor',
             [
                 'label' => esc_html__('Background', 'elementor-list-widget'),
                 'type' => \Elementor\Controls_Manager::COLOR,
@@ -121,7 +121,6 @@ class widget_slider extends Widget_Base
     {
 
         $settings = $this->get_settings_for_display();
-        print_r($settings);
 ?>
             <div id="splide" style="background-color: <?php echo $settings['bgColor']?>;" data-splide='{"type":"loop","perPage":1}' class="splide">
                 <div class="splide__track">
