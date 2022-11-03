@@ -442,4 +442,8 @@ header {
     .legenda-header{
         display: none !important; 
     }
+
+    .menu{
+        flex-direction: column !important;
+    }
 }
