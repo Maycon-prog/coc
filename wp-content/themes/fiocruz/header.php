@@ -85,9 +85,9 @@
                 <div class="options-header-mobile">
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
-                        <a onclick="font_size('sub')" href="#" class="sub-font">A</a>
-                        <a onclick="font_size('normal')" href="#" class="normal-font">A</a>
-                        <a onclick="font_size('soma')" href="#" class="soma-font">A</a>
+                        <a onclick="font_size('sub')" href="#" class="sub-font" accesskey="-">A</a>
+                        <a onclick="font_size('normal')" href="#" class="normal-font" accesskey=" ">A</a>
+                        <a onclick="font_size('soma')" href="#" class="soma-font" accesskey="+">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
