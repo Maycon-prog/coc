@@ -83,13 +83,6 @@
                 </div>
 
                 <div class="options-header-mobile">
-                    <div class="div-options-mobile d-flex">
-                        <strong>Na Web</strong>
-                        <a class="a-social" target="_BLACK" href="https://twitter.com/fiocruz"><i class="bi bi-twitter"></i></a>
-                        <a class="a-social" target="_BLACK" href="https://www.facebook.com/oficialfiocruz/"><i class="bi bi-facebook"></i></a>
-                        <a class="a-social" target="_BLACK" href="https://www.instagram.com/oficialfiocruz/"><i class="bi bi-instagram"></i></a>
-                        <a class="a-social" target="_BLACK" href="https://www.youtube.com/user/fundacaooswaldocruz"><i class="bi bi-youtube"></i></a>
-                    </div>
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
                         <a onclick="font_size('sub')" href="#" class="sub-font">A</a>
