@@ -39,7 +39,7 @@ class widget_relacionado1 extends Widget_Base
                 $existe = true;
             }
         }
-        if(!$existe){
+        if($existe){
             echo "<h2 class='text-center'>Conteudo Relacionado</h2>";
         }
         ?>
