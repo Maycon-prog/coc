@@ -46,9 +46,6 @@ class widget_relacionado1 extends Widget_Base
 
         <?php
         }
-        ?>
-
-<?php
     }
 
     protected function _content_template()

@@ -352,8 +352,10 @@ header {
 
 .titulo-relacionado{
     background-color: #ccc;
+    background-size: conver;
     margin-top: 5px;
     padding: 5px;
+    justify-content: space-between;
     a{
         font-size: 1.5rem;
         text-decoration: none;
