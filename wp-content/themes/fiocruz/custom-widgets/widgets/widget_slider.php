@@ -85,28 +85,28 @@ class widget_slider extends Widget_Base
         $this->end_controls_section();
 
         $this->start_controls_section(
-			'style_marker_section',
-			[
-				'label' => esc_html__( 'Marker Style', 'elementor-list-widget' ),
-				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-			]
-		);
+            'style_marker_section',
+            [
+                'label' => esc_html__('Marker Style', 'elementor-list-widget'),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
 
-		$this->add_control(
-			'marker_color',
-			[
-				'label' => esc_html__( 'Background', 'elementor-list-widget' ),
-				'type' => \Elementor\Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .elementor-list-widget-text::marker' => 'color: {{VALUE}};',
-				],
-			]
-		);
+        $this->add_control(
+            'marker_color',
+            [
+                'label' => esc_html__('Background', 'elementor-list-widget'),
+                'type' => \Elementor\Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .elementor-list-widget-text::marker' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
 
         $this->end_controls_section();
     }
 
-    protected function render() 
+    protected function render()
     {
 
         $settings = $this->get_settings_for_display();
@@ -118,8 +118,10 @@ class widget_slider extends Widget_Base
                     for ($i = 0; $i < count($settings['list']); $i++) {
                     ?>
                         <li class="splide__slide">
-                            <h4 class="slide-title texto"><?=$settings['list'][$i]['list_title']?></h4>
-                            <p class="slide-content texto"><?=$settings['list'][$i]['list_content']?></p>
+                            <article>
+                                <h2 class="slide-title texto"><?= $settings['list'][$i]['list_title'] ?></h2>
+                                <p class="slide-content texto"><?= $settings['list'][$i]['list_content'] ?></p>
+                            </article>
                         </li>
                     <?php
                     }
