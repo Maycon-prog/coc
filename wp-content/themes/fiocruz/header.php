@@ -102,14 +102,3 @@
                 </div>
             </div>
         </header>
-        <?php
-        if (!is_front_page()) {
-        ?>
-            <div class="banner-area title-pages">
-                <div class="container">
-                    <h1 class="title-center"><?php echo get_the_title(); ?></h1>
-                </div>
-            </div>
-        <?php
-        }
-        ?>

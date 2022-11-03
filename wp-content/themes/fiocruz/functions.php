@@ -30,6 +30,13 @@ function theme_add_config()
         'flex-width' => true
     ));
 
+    add_theme_support('custom-logo-dark', array(
+        'width' => 238,
+        'height' => 80,
+        'flex-height' => false,
+        'flex-width' => true
+    ));
+
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'theme_add_config', 0);
