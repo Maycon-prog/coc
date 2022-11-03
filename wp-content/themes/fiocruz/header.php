@@ -68,6 +68,7 @@
 
 
             <div id="menu-mobile">
+            <h1 class="legenda-header">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h1>
                 <button onclick="button_menu('close');" class="close-button"><i class="bi bi-x-circle"></i></button>
                 <div class="menu-header-mobile">
                     <nav class="nav-menu-mobile">

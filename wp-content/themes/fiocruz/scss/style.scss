@@ -281,6 +281,7 @@ header {
         flex-direction: column;
         padding: 0;
         font-size: 1.5rem;
+        text-align: center;
 
         li>a {
             margin-left: 0px;
@@ -292,6 +293,8 @@ header {
     .options-header-mobile {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
 
         .div-options-mobile {
             padding: 5px 10px;
@@ -448,8 +451,7 @@ header {
     }
 
     .nav-menu,
-    .options-header,
-    .logo-menu{
+    .options-header{
         display: none !important;
     }
     .menu-header{
