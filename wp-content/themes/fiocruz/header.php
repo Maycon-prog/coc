@@ -21,13 +21,13 @@
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey="0">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
+                        <a id="sub" href="#" class="sub-font" accesskey="-">A</a>
+                        <a id="normal" href="#" class="normal-font" accesskey="0">A</a>
+                        <a id="soma" href="#" class="soma-font" accesskey="+">A</a>
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
+                        <a class="contraste" href="#" accesskey="2"><strong>Alto Contraste [2]</strong></a>
                     </div>
                 </div>
                 <div class="menu-header">
@@ -42,7 +42,7 @@
                         }
                         ?>
                     </div>
-                    <button onclick="button_menu('open');" class="check-button">
+                    <button id="open" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
@@ -68,7 +68,7 @@
 
 
             <div id="menu-mobile">
-                <button onclick="button_menu('close');" class="close-button"><i class="bi bi-x-circle"></i></button>
+                <button id="close" class="close-button"><i class="bi bi-x-circle"></i></button>
                 <h2 class="legenda-mobile">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h2>
                 <div class="menu-header-mobile">
                     <nav class="nav-menu-mobile">
@@ -86,13 +86,13 @@
                 <div class="options-header-mobile">
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
+                        <a id="sub" href="#" class="sub-font">A</a>
+                        <a id="normal" href="#" class="normal-font">A</a>
+                        <a id="soma" href="#" class="soma-font">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
+                        <a class="contraste" href="#"><strong>Alto Contraste</strong></a>
                     </div>
                 </div>
             </div>
