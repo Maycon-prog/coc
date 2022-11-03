@@ -200,6 +200,7 @@ header {
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
+        padding: 1rem 0;
 
         .logo-menu {
             max-width: 100%;
@@ -273,9 +274,18 @@ header {
         color: #fff;
         font-size: 30px;
         cursor: pointer;
+
+        i {
+            font-size: 2rem;
+        }
     }
 
-    .nav-menu-mobile>.menu-main-menu-container>.menu {
+    .legenda-mobile {
+        text-align: center;
+        color: #fff;
+    }
+
+    .nav-menu-mobile>.menu-header-menu-container>.menu {
         display: flex;
         list-style-type: none;
         flex-direction: column;
@@ -444,10 +454,6 @@ header {
         .menu-icon {
             display: block;
         }
-    }
-
-    .menu-header{
-        justify-content: flex-end !important;
     }
 
     .nav-menu,
