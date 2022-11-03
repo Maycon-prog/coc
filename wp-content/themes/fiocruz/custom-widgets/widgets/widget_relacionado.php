@@ -2,17 +2,17 @@
 
 namespace Elementor;
 
-class widget_relacionado1 extends Widget_Base
+class widget_relacionado extends Widget_Base
 {
 
     public function get_name()
     {
-        return 'relacionado1'; // nome para usar no código
+        return 'relacionado'; // nome para usar no código
     }
 
     public function get_title()
     {
-        return 'Relacionado 1'; // nome para o usuario
+        return 'Relacionado'; // nome para o usuario
     }
 
     public function get_icon()
