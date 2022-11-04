@@ -365,7 +365,6 @@ header {
 
 
 
-
 .bloco-relacionado{
     padding: 5px;
 }
@@ -483,5 +482,9 @@ header {
 
     .nav-menu-mobile > .menu-header-menu-container > .menu{
         flex-direction: column !important;
+    }
+
+    .relacionado{
+        flex-wrap: wrap !important;
     }
 }
