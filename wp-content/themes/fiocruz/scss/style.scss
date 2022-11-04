@@ -77,7 +77,7 @@ body {
         border: 1px solid white;
     }
  
-    .splide, .titulo-relacionado{
+    .splide, .titulo-relacionado {
         border: 1px solid white;
         background-color: black !important;
     }
@@ -130,7 +130,7 @@ body {
 }
 
 .texto {
-    color: var(--texto);
+    color: var(--texto) !important;
 }
 
 .link a {
