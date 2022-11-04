@@ -56,7 +56,7 @@ class widget_relacionado extends Widget_Base
                     <div class="bloco-relacionado ">
                         <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
                         <div class="d-flex titulo-relacionado">
-                            <a class="texto" href="<?php print_r($post_link) ?>"><?php echo $titulo ?></a>
+                            <a class="texto" href="<?php echo $post_link ?>"><?php echo $titulo ?></a>
                             <i class="bi bi-arrow-right"></i>
                         </div>
                     </div>
