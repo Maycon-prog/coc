@@ -21,9 +21,9 @@
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" class="sub-font" accesskey="-">A</a>
-                        <a onclick="tamanhoFont('normal')" class="normal-font" accesskey="0">A</a>
-                        <a onclick="tamanhoFont('soma')" class="soma-font" accesskey="+">A</a>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey="0">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
@@ -86,9 +86,9 @@
                 <div class="options-header-mobile">
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" class="sub-font">A</a>
-                        <a onclick="tamanhoFont('normal')" class="normal-font">A</a>
-                        <a onclick="tamanhoFont('soma')" class="soma-font">A</a>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
