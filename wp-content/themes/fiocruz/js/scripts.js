@@ -74,4 +74,6 @@ function button_menu(action){
 
 const contrast = document.getElementById("contraste");
 
-contrast.onclick = contraste();
+contrast.onclick = function contraste(){
+    console.log('Contraste foi');
+};
