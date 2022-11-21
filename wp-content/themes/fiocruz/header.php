@@ -21,9 +21,9 @@
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" accesskey="-">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" accesskey="0">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" accesskey="+">A</a>
+                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" alt="Diminuir fonte, pressione" accesskey="-">A</a>
+                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" alt="Voltar fonte ao padrão, pressione" accesskey="0">A</a>
+                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" alt="Aumentar fonte, pressione" accesskey="+">A</a>
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
