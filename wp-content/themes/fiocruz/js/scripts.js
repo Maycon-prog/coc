@@ -72,4 +72,4 @@ function button_menu(action){
     }
 }
 
-document.getElementById("contraste").onclick = contraste();
+document.getElementById("contraste").onclick = () => { contraste(); };
