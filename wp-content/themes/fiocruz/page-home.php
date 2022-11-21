@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<span>oi</span>
+<main>
 <?php the_content(); ?>
-<span>tchau</span>
+
 <?php get_footer(); ?>
