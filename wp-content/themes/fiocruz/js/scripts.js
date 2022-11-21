@@ -65,32 +65,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const sub = document.getElementById("sub");
     if(sub) {
-        sub.addEventListener("click", tamanhoFont("sub"));
+        sub.addEventListener("click", function() { tamanhoFont("sub"); });
     }
 
     const subMobile = document.getElementById("subMobile");
     if(subMobile) {
-        subMobile.addEventListener("click", tamanhoFont("sub"));
+        subMobile.addEventListener("click", function() { tamanhoFont("sub"); });
     }
 
     const normal = document.getElementById("normal");
     if(normal) {
-        normal.addEventListener("click", tamanhoFont("normal"));
+        normal.addEventListener("click", function() { tamanhoFont("normal"); });
     }
 
     const normalMobile = document.getElementById("normalMobile");
     if(normalMobile) {
-        normalMobile.addEventListener("click", tamanhoFont("normal"));
+        normalMobile.addEventListener("click", function() { tamanhoFont("normal"); });
     }
 
     const soma = document.getElementById("soma");
     if(soma) {
-        soma.addEventListener("click", tamanhoFont("soma"));
+        soma.addEventListener("click", function() { tamanhoFont("soma"); });
     }
 
     const somaMobile = document.getElementById("somaMobile");
     if(somaMobile) {
-        somaMobile.addEventListener("click", tamanhoFont("soma"));
+        somaMobile.addEventListener("click", function() { tamanhoFont("soma"); });
     }
 
     function button_menu(action){
@@ -109,12 +109,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const open = document.getElementById("open");
     if(open) {
-        open.addEventListener("click", button_menu("open"));
+        open.addEventListener("click", function() { button_menu("open"); });
     }
 
     const close = document.getElementById("close");
     if(close) {
-        close.addEventListener("click", button_menu("close"));
+        close.addEventListener("click", function() { button_menu("close"); });
     }
 
 });
