@@ -86,13 +86,13 @@
                 <div class="options-header-mobile">
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
-                        <a id="sub" href="#" class="sub-font">A</a>
-                        <a id="normal" href="#" class="normal-font">A</a>
-                        <a id="soma" href="#" class="soma-font">A</a>
+                        <a id="subMobile" href="#" class="sub-font">A</a>
+                        <a id="normalMobile" href="#" class="normal-font">A</a>
+                        <a id="somaMobile" href="#" class="soma-font">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a id="contraste" class="contraste"><strong>Alto Contraste</strong></a>
+                        <a id="contrasteMobile" class="contraste"><strong>Alto Contraste</strong></a>
                     </div>
                 </div>
             </div>
