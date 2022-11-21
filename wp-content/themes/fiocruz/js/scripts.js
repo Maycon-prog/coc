@@ -11,23 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    if(sessionStorage.getItem('tema') == 'escuro') {
-        document.getElementById('pagina').classList.add("dark-mode");
-    }
-
-    if(sessionStorage.getItem('fonte') == 'aumentada') {
-        document.getElementById('pagina').classList.add("aumentou");
-        document.getElementById('pagina').classList.remove("diminuiu");
-    } else if(sessionStorage.getItem('fonte') == 'diminuida') {
-        document.getElementById('pagina').classList.add("diminuiu");
-        document.getElementById('pagina').classList.remove("aumentou");
-    } else {
-        document.getElementById('pagina').classList.remove("aumentou");
-        document.getElementById('pagina').classList.remove("diminuiu");
-    }
-});
-
 function tamanhoFont(tamanho) {
     if(tamanho == 'normal') {
         document.getElementById('pagina').classList.remove("diminuiu");
@@ -46,21 +29,23 @@ function tamanhoFont(tamanho) {
     }
 }
 
-function button_menu(action){
-    switch (action) {
-        case 'open':
-            document.getElementById('menu-mobile').style.display = 'block';
-            document.getElementById('menu-desktop').style.display = 'none';   
-        break;
-        case 'close':
-            document.getElementById('menu-mobile').style.display = 'none';
-            document.getElementById('menu-desktop').style.display = 'block'; 
-        break;
-        default: alert("Informe o action");
+document.addEventListener('DOMContentLoaded', function () {
+    if(sessionStorage.getItem('tema') == 'escuro') {
+        document.getElementById('pagina').classList.add("dark-mode");
     }
-}
 
-const contrast = document.getElementById("contraste");
+    if(sessionStorage.getItem('fonte') == 'aumentada') {
+        document.getElementById('pagina').classList.add("aumentou");
+        document.getElementById('pagina').classList.remove("diminuiu");
+    } else if(sessionStorage.getItem('fonte') == 'diminuida') {
+        document.getElementById('pagina').classList.add("diminuiu");
+        document.getElementById('pagina').classList.remove("aumentou");
+    } else {
+        document.getElementById('pagina').classList.remove("aumentou");
+        document.getElementById('pagina').classList.remove("diminuiu");
+    }
+
+    const contrast = document.getElementById("contraste");
 
 if(contrast) {
     contrast.addEventListener("click", function contraste(){
@@ -95,5 +80,23 @@ const soma = document.getElementById("soma");
 
 if(soma) {
     soma.addEventListener("click", tamanhoFont("soma"));
+}
+
+
+});
+
+
+function button_menu(action){
+    switch (action) {
+        case 'open':
+            document.getElementById('menu-mobile').style.display = 'block';
+            document.getElementById('menu-desktop').style.display = 'none';   
+        break;
+        case 'close':
+            document.getElementById('menu-mobile').style.display = 'none';
+            document.getElementById('menu-desktop').style.display = 'block'; 
+        break;
+        default: alert("Informe o action");
+    }
 }
 
