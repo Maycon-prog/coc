@@ -72,4 +72,6 @@ function button_menu(action){
     }
 }
 
-document.getElementById("contraste").onclick = () => { contraste(); };
+const contrast = document.getElementById("contraste");
+
+contrast.onclick = contraste();
