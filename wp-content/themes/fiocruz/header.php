@@ -42,7 +42,7 @@
                         }
                         ?>
                     </div>
-                    <button onclick="button_menu('open');" class="check-button">
+                    <button id="open" class="check-button">
                         <div class="menu-icon">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
@@ -68,7 +68,7 @@
 
 
             <div id="menu-mobile">
-                <button onclick="button_menu('close');" class="close-button"><i class="bi bi-x-circle"></i></button>
+                <button id="close" class="close-button"><i class="bi bi-x-circle"></i></button>
                 <h2 class="legenda-mobile">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h2>
                 <div class="menu-header-mobile">
                     <nav class="nav-menu-mobile">
