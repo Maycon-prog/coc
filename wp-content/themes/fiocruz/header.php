@@ -92,7 +92,7 @@
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a onclick="contraste()" class="contraste"><strong>Alto Contraste</strong></a>
+                        <a id="contraste" class="contraste"><strong>Alto Contraste</strong></a>
                     </div>
                 </div>
             </div>

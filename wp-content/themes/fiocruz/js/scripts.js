@@ -71,3 +71,5 @@ function button_menu(action){
         default: alert("Informe o action");
     }
 }
+
+document.getElementById("contraste").onclick = contraste();
