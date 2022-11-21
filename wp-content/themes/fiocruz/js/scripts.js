@@ -28,18 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-function contraste() {   
-    if(document.getElementById('pagina').className.includes("dark-mode")){
-        document.getElementById('pagina').classList.remove("dark-mode");
-        document.getElementById('pagina').classList.add("light-mode");
-        sessionStorage.removeItem('tema');
-    } else {    
-        document.getElementById('pagina').classList.add("dark-mode");
-        document.getElementById('pagina').classList.remove("light-mode");
-        sessionStorage.setItem('tema', 'escuro');
-    }
-}
-
 function tamanhoFont(tamanho) {
     if(tamanho == 'normal') {
         document.getElementById('pagina').classList.remove("diminuiu");
@@ -75,5 +63,25 @@ function button_menu(action){
 const contrast = document.getElementById("contraste");
 
 contrast.onclick = function contraste(){
-    console.log('Contraste foi');
+    if(document.getElementById('pagina').className.includes("dark-mode")){
+        document.getElementById('pagina').classList.remove("dark-mode");
+        document.getElementById('pagina').classList.add("light-mode");
+        sessionStorage.removeItem('tema');
+    } else {    
+        document.getElementById('pagina').classList.add("dark-mode");
+        document.getElementById('pagina').classList.remove("light-mode");
+        sessionStorage.setItem('tema', 'escuro');
+    }
 };
+
+const sub = document.getElementById("sub");
+
+sub.onclick = tamanhoFont("sub");
+
+const normal = document.getElementById("normal");
+
+normal.onclick = tamanhoFont("normal");
+
+const soma = document.getElementById("soma");
+
+soma.onclick = tamanhoFont("soma");

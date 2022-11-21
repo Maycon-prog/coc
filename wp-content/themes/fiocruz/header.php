@@ -21,13 +21,13 @@
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font" alt="Diminuir fonte, pressione" accesskey="-">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font" alt="Voltar fonte ao padrão, pressione" accesskey="0">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font" alt="Aumentar fonte, pressione" accesskey="+">A</a>
+                        <a id="sub" href="#" class="sub-font" alt="Diminuir fonte, pressione" accesskey="-">A</a>
+                        <a id="normal" href="#" class="normal-font" alt="Voltar fonte ao padrão, pressione" accesskey="0">A</a>
+                        <a id="soma" href="#" class="soma-font" alt="Aumentar fonte, pressione" accesskey="+">A</a>
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
-                        <a onclick="contraste()" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
+                        <a id="contraste" class="contraste" accesskey="2"><strong>Alto Contraste [2]</strong></a>
                     </div>
                 </div>
                 <div class="menu-header">
@@ -86,9 +86,9 @@
                 <div class="options-header-mobile">
                     <div class="div-options-mobile">
                         <strong>Texto</strong>
-                        <a onclick="tamanhoFont('sub')" href="#" class="sub-font">A</a>
-                        <a onclick="tamanhoFont('normal')" href="#" class="normal-font">A</a>
-                        <a onclick="tamanhoFont('soma')" href="#" class="soma-font">A</a>
+                        <a id="sub" href="#" class="sub-font">A</a>
+                        <a id="normal" href="#" class="normal-font">A</a>
+                        <a id="soma" href="#" class="soma-font">A</a>
                     </div>
                     <div class="div-options-mobile d-flex">
                         <i class="icon bi bi-circle-half"></i>
