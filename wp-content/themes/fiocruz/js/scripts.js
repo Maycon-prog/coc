@@ -25,28 +25,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const slideAtivo = document.getElementsByClassName("is-visible");
+    const slides = document.getElementsByClassName("splide__slide");
     function active_tabindex() {
-        for (let i = 0; i < slideAtivo.length; i++) {
-            for (let j = 0; j < slideAtivo[i].getElementsByClassName("slide-title").length; j++) {
-                slideAtivo[i].getElementsByClassName("slide-title")[j].removeAttribute("tabindex");
-                slideAtivo[i].getElementsByClassName("slide-content")[j].removeAttribute("tabindex");  
-            }
-            if (slideAtivo[i]) {
-                slideAtivo[i].getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
-                slideAtivo[i].getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
-            }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].getElementsByClassName("slide-title")[0].removeAttribute("tabindex");
+            slides[i].getElementsByClassName("slide-content")[0].removeAttribute("tabindex");  
+            console.log(slides[i]);
         }   
+        for (let j = 0; j < slideAtivo.length; j++) {
+            if (slideAtivo[j]) {
+                slideAtivo[j].getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
+                slideAtivo[j].getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
+                console.log(slideAtivo[j]);
+            }            
+        }
     }
     active_tabindex();
     jQuery(".next").click(function(){
         setTimeout(() => {
             active_tabindex();
-        }, 1000);
+        }, 500);
     });
     jQuery(".prev").click(function(){
         setTimeout(() => {
             active_tabindex();
-        }, 1000);
+        }, 500);
     });
 
 });
