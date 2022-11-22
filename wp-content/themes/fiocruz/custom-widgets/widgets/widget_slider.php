@@ -105,6 +105,7 @@ class widget_slider extends Widget_Base
                         ?>
                     </ul>
                 </div>
+                <div class="splide__arrows"></div>
             </div>
 
 <?php

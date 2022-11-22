@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
             classes:{
                 prev: 'splide__arrow--prev prev',
                 next: 'splide__arrow--next next'
-            }
+            },
+            i18n: {
+                prev: 'Slide anterior',
+                next: 'Próximo slide',
+          }
         }).mount();
     }
 });
