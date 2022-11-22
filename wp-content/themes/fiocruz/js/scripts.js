@@ -8,9 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 next: 'splide__arrow--next next'
             },
             i18n: {
-                prev: 'Slide anterior',
-                next: 'Próximo slide',
-          }
+                prev: "Slide anterior",
+                next: "Próximo slide",
+                first: "Ir para o primeiro slide",
+                last: "Ir para o último slide",
+                slideX: "Vá para o slide %s",
+                pageX: "Ir para a página %s",
+                play: "Iniciar reprodução automática",
+                pause: "Pausar reprodução automática",
+                carousel: "carrossel",
+                select: "Selecione um slide para mostrar",
+                slide: "deslizar",
+                slideLabel: "%s de %s",
+              },
         }).mount();
     }
 });
