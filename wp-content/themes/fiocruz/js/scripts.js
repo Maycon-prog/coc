@@ -131,10 +131,10 @@ document.addEventListener('DOMContentLoaded', function () {
         close.addEventListener("click", function() { button_menu("close"); });
     }
 
-    const slideAtivo = document.getElementsByClassName("is_actived");
+    const slideAtivo = document.getElementsByClassName("is_actived")[0];
     if (slideAtivo) {
-        slideAtivo[0].h2.setAttribute("tabindex", "0");  
-        slideAtivo[0].p.setAttribute("tabindex", "0"); 
+        slideAtivo.getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
+        slideAtivo.getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
     }
 
 });
