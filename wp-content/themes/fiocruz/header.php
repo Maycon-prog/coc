@@ -41,13 +41,11 @@
                         }
                         ?>
                     </div>
-                    <button id="open" class="check-button">
-                        <div class="menu-icon">
+                        <div id="open" class="check-button menu-icon">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
                             <div class="bar3"></div>
                         </div>
-                    </button>
                     <h1 class="legenda-header">Programa de Pós-Graduação em Divulgação da Ciência, Tecnologia e Saúde</h1>
                 </div>
             </div>
