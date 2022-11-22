@@ -85,6 +85,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    const contrasteMobile = document.getElementById("contrasteMobile");
+
+    if(contrasteMobile) {
+        contrasteMobile.addEventListener("click", function cotraste(){
+            if(document.getElementById('pagina').className.includes("dark-mode")){
+                document.getElementById('pagina').classList.remove("dark-mode");
+                document.getElementById('pagina').classList.add("light-mode");
+                sessionStorage.removeItem('tema');
+            } else {    
+                document.getElementById('pagina').classList.add("dark-mode");
+                document.getElementById('pagina').classList.remove("light-mode");
+                sessionStorage.setItem('tema', 'escuro');
+            }
+        });
+    }
+
     function tamanhoFont(tamanho) {
         if(tamanho == 'normal') {
             document.getElementById('pagina').classList.remove("diminuiu");
