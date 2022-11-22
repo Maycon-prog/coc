@@ -41,7 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
     jQuery(".next").click(function(){
         setTimeout(() => {
             active_tabindex();
-        }, 1000);
+        }, 300);
+    });
+    jQuery(".prev").click(function(){
+        setTimeout(() => {
+            active_tabindex();
+        }, 300);
     });
 
 });
