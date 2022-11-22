@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
     active_tabindex();
     jQuery(".next" ).click(function(){
         active_tabindex();
-        alert( "Handler for .click() called." );
     });
 
 });
