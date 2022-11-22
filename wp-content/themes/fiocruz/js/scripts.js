@@ -23,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function () {
               },
         }).mount();
     }
+
+    const slideAtivo = document.getElementsByClassName("is-active")[0];
+    if (slideAtivo) {
+        slideAtivo.getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
+        slideAtivo.getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -129,12 +135,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const close = document.getElementById("close");
     if(close) {
         close.addEventListener("click", function() { button_menu("close"); });
-    }
-
-    const slideAtivo = document.getElementsByClassName("is_actived")[0];
-    if (slideAtivo) {
-        slideAtivo.getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
-        slideAtivo.getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
     }
 
 });
