@@ -52,7 +52,7 @@ class widget_relacionado extends Widget_Base
                     $post_link = get_permalink($post_id);
                     $titulo = get_the_title($post_id);
                     $thumbnailId = get_post_thumbnail_id($post_id);
-                    $altImagem = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+                    $altImagem = get_post_meta($thumbnailId, '_wp_attachment_image_alt', true);
                     $thumbnail = get_the_post_thumbnail_url($post_id);
             ?>
                     <div class="bloco-relacionado ">
