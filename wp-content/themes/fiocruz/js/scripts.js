@@ -39,18 +39,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(slideAtivo[j]);
             }            
         }
-
     }
     active_tabindex();
     jQuery(".next").click(function(){
-        setTimeout(() => {
-            active_tabindex();
-        }, 1000);
+        active_tabindex();
     });
     jQuery(".prev").click(function(){
-        setTimeout(() => {
-            active_tabindex();
-        }, 1000);
+        active_tabindex();
     });
 
 });
