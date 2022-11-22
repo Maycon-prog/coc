@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const slideAtivo = document.getElementsByClassName("is-visible");
     function active_tabindex() {
-        console.log(slideAtivo);
         for (let i = 0; i < slideAtivo.length; i++) {
             for (let j = 0; j < slideAtivo[i].getElementsByClassName("slide-title").length; j++) {
                 slideAtivo[i].getElementsByClassName("slide-title")[j].removeAttribute("tabindex");
@@ -39,6 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }   
     }
     active_tabindex();
+    jQuery(".next" ).click(function(){
+        active_tabindex();
+        alert( "Handler for .click() called." );
+    });
 
 });
 
