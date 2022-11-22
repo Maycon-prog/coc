@@ -38,8 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }   
     }
     active_tabindex();
-    jQuery(".next" ).click(function(){
-        active_tabindex();
+    jQuery(".next").click(function(){
+        setTimeout(() => {
+            active_tabindex();
+        }, 1000);
     });
 
 });
