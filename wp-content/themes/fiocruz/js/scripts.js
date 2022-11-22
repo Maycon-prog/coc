@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }).mount();
     }
 
-    const slideAtivo = document.getElementsByClassName("is-active");
+    const slideAtivo = document.getElementsByClassName("is-visible");
     function active_tabindex() {
         for (let i = 0; i < slideAtivo.length; i++) {
             for (let j = 0; j < slideAtivo[i].getElementsByClassName("slide-title").length; j++) {
@@ -38,6 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }   
     }
     active_tabindex();
+    jQuery(".next").click(function(){
+        setTimeout(() => {
+            active_tabindex();
+        }, 1000);
+    });
+    jQuery(".prev").click(function(){
+        setTimeout(() => {
+            active_tabindex();
+        }, 1000);
+    });
 
 });
 
