@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slides[i].getElementsByClassName("slide-content")[0].removeAttribute("tabindex");  
             console.log(slides[i]);
         }   
-        for (let j = 0; j < slideAtivo[i].length; j++) {
+        for (let j = 0; j < slideAtivo.length; j++) {
             if (slideAtivo[j]) {
                 slideAtivo[j].getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
                 slideAtivo[j].getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
