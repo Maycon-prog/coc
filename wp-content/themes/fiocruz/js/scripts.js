@@ -24,13 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }).mount();
     }
 
-    setTimeout(function() {
-        if (slideAtivo) {
-            slideAtivo.getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
-            slideAtivo.getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
-        }
-        const slideAtivo = document.getElementsByClassName("is-active")[0];
-    }, 3000);
+    const slideAtivo = document.getElementsByClassName("is-active")[0];
+    if (slideAtivo) {
+        slideAtivo.getElementsByClassName("slide-title")[0].setAttribute("tabindex", "0");  
+        slideAtivo.getElementsByClassName("slide-content")[0].setAttribute("tabindex", "0");  
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
