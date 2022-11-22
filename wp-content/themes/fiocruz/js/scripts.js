@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }).mount();
     }
 
-    const slideAtivo = document.getElementsByClassName("is-active");
+    const slideAtivo = document.getElementsByClassName("is-visible");
     function active_tabindex() {
         console.log(slideAtivo);
         for (let i = 0; i < slideAtivo.length; i++) {
