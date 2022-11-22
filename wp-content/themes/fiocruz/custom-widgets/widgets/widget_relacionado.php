@@ -51,10 +51,12 @@ class widget_relacionado extends Widget_Base
                     $post_id = get_field("post_relacionado$i")->ID;
                     $post_link = get_permalink($post_id);
                     $titulo = get_the_title($post_id);
+                    $thumbnailId = get_post_thumbnail_id($post_id);
+                    $altImagem = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
                     $thumbnail = get_the_post_thumbnail_url($post_id);
             ?>
                     <div class="bloco-relacionado ">
-                        <div class="img-relacionado" style="background-image: url('<?php echo $thumbnail ?>')"></div>
+                        <img src="<?php echo $thumbnail; ?>" alt="<?php echo $altImagem; ?>">
                         <div class="d-flex titulo-relacionado">
                             <a class="texto" href="<?php echo $post_link ?>"><?php echo $titulo ?></a>
                             <i class="bi bi-arrow-right"></i>
