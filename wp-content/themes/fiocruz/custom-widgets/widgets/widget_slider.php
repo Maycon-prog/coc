@@ -90,7 +90,7 @@ class widget_slider extends Widget_Base
 
         $settings = $this->get_settings_for_display();
 ?>
-            <div id="splide" data-splide='{"type":"loop","perPage":1}' class="splide">
+            <div id="splide" data-splide='{"perPage":1}' class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <?php
