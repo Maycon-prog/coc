@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const slideAtivo = document.getElementsByClassName("is-active");
     function active_tabindex() {
-        console.log(slideAtivo);
+        console.log(slideAtivo[0]);
         for (let i = 0; i < slideAtivo.length; i++) {
             for (let j = 0; j < slideAtivo[i].getElementsByClassName("slide-title").length; j++) {
                 slideAtivo[i].getElementsByClassName("slide-title")[j].removeAttribute("tabindex");
