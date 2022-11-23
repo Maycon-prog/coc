@@ -1,6 +1,7 @@
 <?php get_header(); 
 		$short_dir = './custom-widgets/widgets';
         echo $short_dir;
+        var_dump(scandir($short_dir));
         $myfiles = array_diff(scandir($short_dir), array('.', '..'));
 
         foreach ($myfiles as $file) {
