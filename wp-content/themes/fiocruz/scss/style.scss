@@ -503,11 +503,19 @@ header {
     text-align: justify;
 }
 
-footer {
+.footer {
     background-color: var(--footer) !important;
 
     h2 {
-        color: #FFF;
+        color: #FFF !important;
+    }
+
+    p {
+        color: #FFF !important; 
+
+        a {
+            color: var(--link) !important;
+        }
     }
 }
 
