@@ -68,7 +68,7 @@ body {
 .carousel-indicators > .active{
     background-color: #fff;
 }
-.carousel-control-prev:focus{
+.carousel-control-prev:focus, .carousel-control-next{
     outline: 3px solid #0bf !important;
     outline-offset: 3px !important;
 }
