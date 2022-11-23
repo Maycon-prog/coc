@@ -68,6 +68,7 @@ class imagem extends \Elementor\Widget_Base
             <figcaption><?=$settings['legenda']?></figcaption>
         </figure>
         <?php
+        print_r($settings);
     }
 
     protected function content_template()
