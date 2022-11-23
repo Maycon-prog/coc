@@ -416,9 +416,6 @@ header {
     }
 }
 
-
-
-
 .bloco-relacionado{
     padding: 5px;
 }
@@ -512,6 +509,15 @@ footer {
     }
 }
 
+.footer {
+    p {
+        color: #FFF;
+
+        a {
+            color: var(--link);
+        }
+    }
+}
 
 // quando for menor que 992
 @media (max-width: 992px) {
