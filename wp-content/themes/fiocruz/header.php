@@ -20,9 +20,9 @@
                     </div>
                     <div class="div-options">
                         <strong>Texto</strong>
-                        <a id="sub" href="#" class="sub-font" aria-label="Diminuir fonte, pressione alt menos" accesskey="-">A</a>
-                        <a id="normal" href="#" class="normal-font" aria-label="Voltar fonte ao padrão, pressione" accesskey="0">A</a>
-                        <a id="soma" href="#" class="soma-font" aria-label="Aumentar fonte, pressione" accesskey="+">A</a>
+                        <a id="sub" href="#" class="sub-font" aria-label="Diminuir fonte, pressione" title="Diminuir fonte, pressione" accesskey="8">A</a>
+                        <a id="normal" href="#" class="normal-font" aria-label="Voltar fonte ao padrão, pressione" title="Voltar fonte ao padrão, pressione" accesskey="9">A</a>
+                        <a id="soma" href="#" class="soma-font" aria-label="Aumentar fonte, pressione" title="Aumentar fonte, pressione" accesskey="0">A</a>
                     </div>
                     <div class="div-options d-flex">
                         <i class="icon bi bi-circle-half"></i>
