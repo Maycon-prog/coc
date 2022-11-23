@@ -62,8 +62,12 @@ class imagem extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
-        // Get image URL 
-       print_r($settings);
+        ?>
+         <figure>
+            <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
+            <figcaption><?=$settings['legenda']?></figcaption>
+        </figure>
+        <?php
     }
 
     protected function content_template()
