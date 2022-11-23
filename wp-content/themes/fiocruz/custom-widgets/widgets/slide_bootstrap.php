@@ -90,7 +90,7 @@ class widget_slider_bootstrap extends Widget_Base
 
         $settings = $this->get_settings_for_display();
         $id = uniqid("slider_");
-        print_r($settings);
+        print_r(count($settings['list']));
 ?>
         <div id="<?= $id ?>" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
             <ol class="carousel-indicators">
