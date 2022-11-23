@@ -43,15 +43,17 @@ body {
 .img{
     width: 100% !important;
 }
-// carrossel bootstrap // 
+// carrossel bootstrap //  
 .slide{
     background-color: #D34D4A;
 }
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+}
 .carousel-item{
-    width: 100%;
+    width: 80%;
     height: 500px;
-    text-align: center;
-    padding: 50px;
 }
 .carousel-indicators{
     margin: 0 !important;
@@ -60,7 +62,6 @@ body {
 .carousel-indicators > li{
     width: 12px;
     height: 12px;
-    border-radius: 10px;
     margin: 8px !important;
     background-color: #c9233b;
     border: none !important;
@@ -500,9 +501,12 @@ header {
     text-align: justify;
 }
 
-.title-footer {
-    color: #FFF;
-    font-weight: 700;
+footer {
+    background-color: var(--footer) !important;
+
+    h2 {
+        color: #FFF;
+    }
 }
 
 .footer {
