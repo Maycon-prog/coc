@@ -98,11 +98,9 @@ class widget_slider_bootstrap extends Widget_Base
                 <li data-target="#<?=$id?>" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <center>
                 <div class="carousel-item active" tabindex="0">
                     <h2>Teste de leitura 1</h2>
                 </div>
-                </center>
                 <div class="carousel-item" tabindex="0">
                     <h2>Teste de leitura 2</h2>
                 </div>
