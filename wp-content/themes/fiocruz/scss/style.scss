@@ -54,6 +54,8 @@ body {
 .carousel-item{
     width: 80%;
     height: 500px;
+    text-align: center;
+    padding: 10px;
 }
 .carousel-indicators{
     margin: 0 !important;
@@ -62,6 +64,7 @@ body {
 .carousel-indicators > li{
     width: 12px;
     height: 12px;
+    border-radius: 10px;
     margin: 8px !important;
     background-color: #c9233b;
     border: none !important;
