@@ -69,7 +69,7 @@ class imagem extends \Elementor\Widget_Base
         </figure>
         <?php
         print_r($settings);
-        print_r(get_post($settings['image']['id']));
+        print_r(wp_get_attachment_caption($settings['image']['id']));
     }
 
     protected function content_template()
