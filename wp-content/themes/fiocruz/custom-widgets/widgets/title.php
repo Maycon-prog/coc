@@ -80,7 +80,7 @@ class title extends \Elementor\Widget_Base
                     'h5' => esc_html__( 'h5', 'textdomain' ),
                     'h6' => esc_html__( 'h6', 'textdomain' ),
 				],
-				'default' => 'h1',
+				'default' => 'h2',
 			]
 		);
 
