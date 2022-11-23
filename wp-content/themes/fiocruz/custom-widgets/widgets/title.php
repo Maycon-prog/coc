@@ -1,6 +1,6 @@
 <?php
 
-class Elementor_Test_Widget extends \Elementor\Widget_Base
+class title extends \Elementor\Widget_Base
 {
 
     public function get_name()
