@@ -195,10 +195,9 @@ document.addEventListener("DOMContentLoaded", function () {
       button_menu("close");
     });
   }
+  
 
-
-
-
+  
   jQuery(".carousel").on("slid.bs.carousel", checkitem);
 
   function checkitem() {
@@ -209,7 +208,9 @@ document.addEventListener("DOMContentLoaded", function () {
       jQuery(".carousel-control-prev", $this).hide();
       // But show right arrow
       jQuery(".carousel-control-next", $this).show();
-    } else if (jQuery(".carousel-inner .carousel-item:last").hasClass("active")) {
+    } else if (
+      jQuery(".carousel-inner .carousel-item:last").hasClass("active")
+    ) {
       // Hide right arrow
       jQuery(".carousel-control-prev", $this).show();
       // But show left arrow
@@ -218,4 +219,5 @@ document.addEventListener("DOMContentLoaded", function () {
       jQuery(".carousel-control-prev, .carousel-control-next", $this).show();
     }
   }
+  checkitem();
 });
