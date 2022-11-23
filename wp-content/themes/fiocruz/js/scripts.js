@@ -199,11 +199,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  jQuery(".myCarousel").on("slid.bs.carousel", checkitem);
+  jQuery(".carousel").on("slid.bs.carousel", checkitem);
 
   function checkitem() {
     // check function
-    var $this = jQuery(".myCarousel");
+    var $this = jQuery(".carousel");
     if (jQuery(".carousel-inner .carousel-item:first").hasClass("active")) {
       // Hide left arrow
       jQuery(".carousel-control-prev", $this).hide();
