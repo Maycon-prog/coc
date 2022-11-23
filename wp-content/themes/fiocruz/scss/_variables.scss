@@ -19,6 +19,16 @@
     --footer: #000;
     --texto: #FFF;
     --fundo: #000;
+
+    .carousel-indicators > li{
+        width: 12px;
+        height: 12px;
+        border-radius: 10px;
+        margin: 8px !important;
+        border: 1px solid #fff;
+        background-color: #000000;
+        border: none !important;
+    }
 }
 
 .diminuiu:root {
