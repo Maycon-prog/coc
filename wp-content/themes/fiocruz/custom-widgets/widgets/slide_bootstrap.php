@@ -93,14 +93,14 @@ class widget_slider_bootstrap extends Widget_Base
 ?>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-item active" tabindex="0">
+                    <h2>Teste de leitura 1</h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-item" tabindex="0">
+                    <h2>Teste de leitura 2</h2>
                 </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                <div class="carousel-item" tabindex="0">
+                    <h2>Teste de leitura 3</h2>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
