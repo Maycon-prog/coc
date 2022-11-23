@@ -47,10 +47,10 @@ class imagem extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-			'legend alignment',
+			'alignment',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'label' => esc_html__( 'Alignment', 'textdomain' ),
+				'label' => esc_html__( 'Legend alignment', 'textdomain' ),
 				'options' => [
 					'left' => [
 						'title' => esc_html__( 'Left', 'textdomain' ),
