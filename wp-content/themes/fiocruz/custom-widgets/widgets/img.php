@@ -52,7 +52,7 @@ class imagem extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
-        // Get image URL
+        // Get image URL 
        print_r($$settings);
     }
 
