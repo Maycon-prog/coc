@@ -53,7 +53,7 @@ class imagem extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
         // Get image URL 
-       print_r($$settings);
+       print_r($settings);
     }
 
     protected function content_template()
