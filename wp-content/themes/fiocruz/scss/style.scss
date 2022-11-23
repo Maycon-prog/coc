@@ -43,6 +43,33 @@ body {
 .img{
     width: 100% !important;
 }
+// carroseu bootstrap // 
+.slide{
+    background-color: #D34D4A;
+}
+.carousel-inner{
+    display: flex;
+    justify-content: center;
+}
+.carousel-item{
+    width: 80%;
+    height: 500px;
+}
+.carousel-indicators{
+    margin: 0 !important;
+    width: 100% !important;
+}
+.carousel-indicators > li{
+    width: 12px;
+    height: 12px;
+    margin: 8px !important;
+    background-color: #c9233b;
+    border: none !important;
+}
+.carousel-indicators > .active{
+    background-color: #fff;
+}
+// fim do carroseu bootstrap //
 
 iframe {
     padding: 0;
