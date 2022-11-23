@@ -68,6 +68,10 @@ body {
 .carousel-indicators > .active{
     background-color: #fff;
 }
+.carousel-control-prev:focus{
+    outline: 3px solid #0bf !important;
+    outline-offset: 3px !important;
+}
 // fim do carrossel bootstrap //
 
 iframe {
