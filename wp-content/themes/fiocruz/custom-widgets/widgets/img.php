@@ -65,7 +65,7 @@ class imagem extends \Elementor\Widget_Base
         ?>
          <figure>
             <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
-            <figcaption><?=$settings['legenda']?></figcaption>
+            <figcaption><?=get_post($settings['image']['id'])->post_excerpt?></figcaption>
         </figure>
         <?php
         print_r($settings);
