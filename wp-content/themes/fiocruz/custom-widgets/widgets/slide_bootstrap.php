@@ -81,7 +81,7 @@ class widget_slider_bootstrap extends Widget_Base
                 'title_field' => '{{{ list_title }}}',
             ]
         );
-        
+
         $this->end_controls_section();
     }
 
@@ -91,31 +91,26 @@ class widget_slider_bootstrap extends Widget_Base
         $settings = $this->get_settings_for_display();
         $id = uniqid("slider_");
 ?>
-            <div id="<?=$id?>" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
-            <ol class="carousel-indicators">
-                <li data-target="<?=$id?>" data-slide-to="0" class="active"></li>
-                <li data-target="<?=$id?>" data-slide-to="1"></li>
-                <li data-target="<?=$id?>" data-slide-to="2"></li>
-            </ol>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" tabindex="0">
-                    <h2>Teste de leitura</h2>
+                <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item" tabindex="0">
-                    <h2>2</h2>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item" tabindex="0">
-                    <h2>3</h2>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="<?="#".$id?>" role="button" data-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="<?="#".$id?>" role="button" data-slide="next">
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
 <?php
