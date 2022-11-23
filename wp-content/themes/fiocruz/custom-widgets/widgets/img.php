@@ -46,6 +46,16 @@ class imagem extends \Elementor\Widget_Base
             ]
         );
 
+        $this->add_control(
+            'legenda',
+            [
+                'type' => \Elementor\Controls_Manager::TEXTAREA,
+                'label' => esc_html__('Legenda da Imagem', 'textdomain'),
+                'placeholder' => esc_html__('Enter your legend', 'textdomain'),
+                'default' => 'Sou uma legenda!',
+            ]
+        );
+
         $this->end_controls_section();
     }
 
