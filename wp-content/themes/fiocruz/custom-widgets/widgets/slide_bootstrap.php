@@ -101,10 +101,8 @@ class widget_slider_bootstrap extends Widget_Base
                 <?php
                 for ($i = 0; $i < count($settings['list']); $i++) {
                 ?>
-                    <div class="carousel-item<?php $i == 1? 'active': ''; ?>">
-                        <div class="conteudo-carousel" tabindex="0">
-                            <h2><?=$settings['list'][$i]['list_title']?></h2>
-                        </div>
+                    <div class="carousel-item<?php $i == 1 ? 'active' : ''; ?>">
+                            <h2><?= $settings['list'][$i]['list_title'] ?></h2>
                     </div>
                 <?php
                 }
