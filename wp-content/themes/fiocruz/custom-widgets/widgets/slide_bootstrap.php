@@ -102,7 +102,10 @@ class widget_slider_bootstrap extends Widget_Base
                 for ($i = 0; $i < count($settings['list']); $i++) {
                 ?>
                     <div class="carousel-item <?php if($i == 0){echo 'active';}?>" tabindex="0">
-                        <h2>Teste de leitura 1</h2>
+                        <div tabindex="0">
+                            <h2><?=$settings['list'][$i]['list_title']?></h2>
+                            <p><?=$settings['list'][$i]['list_content']?></p>
+                        </div>
                     </div>
                 <?php
                 }
