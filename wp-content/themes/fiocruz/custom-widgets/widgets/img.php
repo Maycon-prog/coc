@@ -85,7 +85,6 @@ class imagem extends \Elementor\Widget_Base
     {
         $settings = $this->get_settings_for_display();
         print_r($settings['id']);
-        print_r($settings);
         ?>
          <figure>
             <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
