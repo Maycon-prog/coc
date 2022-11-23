@@ -40,6 +40,7 @@ class title extends \Elementor\Widget_Base
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'label' => esc_html__('Title', 'textdomain'),
                 'placeholder' => esc_html__('Enter your title', 'textdomain'),
+                'default' => 'Isso é um titulo!',
             ]
         );
 
@@ -79,7 +80,7 @@ class title extends \Elementor\Widget_Base
                     'h5' => esc_html__( 'h5', 'textdomain' ),
                     'h6' => esc_html__( 'h6', 'textdomain' ),
 				],
-				'default' => 'no',
+				'default' => 'h1',
 			]
 		);
 
