@@ -16,7 +16,7 @@ class My_Widget_1 extends Widget_Base {
 	}
 	
 	public function get_categories() {
-		return [ 'basic' ];
+		return ['widgets-personalizados'];
 	}
 	
 	protected function _register_controls() {

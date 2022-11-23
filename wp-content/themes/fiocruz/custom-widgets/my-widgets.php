@@ -16,9 +16,8 @@ class My_Elementor_Widgets
 
 	protected function __construct()
 	{
-		require_once('widgets/widget1.php');
-		$short_dir = get_stylesheet_directory() . '/custom-widgets/widgets';
-		$myfiles = array_diff(scandir($short_dir), array('.', '..'));
+		$widget_dir = get_stylesheet_directory() . '/custom-widgets/widgets';
+		$myfiles = array_diff(scandir($widget_dir), array('.', '..'));
 		foreach ($myfiles as $file) {
 			require_once('widgets/'.$file);
 
