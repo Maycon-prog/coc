@@ -13,6 +13,8 @@ class My_Elementor_Widgets {
 	}
 
 	protected function __construct() { 
+
+
 		require_once('widgets/widget1.php');
 		require_once('widgets/widget2.php');
 		require_once('widgets/widget3.php');
