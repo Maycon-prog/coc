@@ -98,32 +98,26 @@ class widget_slider_bootstrap extends Widget_Base
                 <li data-target="#<?= $id ?>" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                
-                <div class="carousel-item active">
-                    <div class="conteudo-carousel"  tabindex="0">
-                        <h2>Teste de leitura 1</h2>
+                <?php
+                for ($i = 0; $i < count($settings['list']); $i++) {
+                ?>
+                    <div class="carousel-item<?php $i == 1 ? 'active' : ''; ?>">
+                        <div class="conteudo-carousel" tabindex="0">
+                            <h2><?= $settings['list'][$i]['title'] ?></h2>
+                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="conteudo-carousel"  tabindex="0">
-                        <h2>Teste de leitura 1</h2>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="conteudo-carousel"  tabindex="0">
-                        <h2>Teste de leitura 1</h2>
-                    </div>
-                </div>
+                <?php
+                }
+                ?>
             </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+            <button class="carousel-control-prev" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
 <?php
