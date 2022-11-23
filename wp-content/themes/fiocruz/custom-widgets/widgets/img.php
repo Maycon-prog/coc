@@ -68,7 +68,7 @@ class imagem extends \Elementor\Widget_Base
             <figcaption><?=get_post($settings['image']['id'])->post_excerpt?></figcaption>
         </figure>
         <?php
-        print_r($settings);
+        //print_r($settings);
     }
 
     protected function content_template()
