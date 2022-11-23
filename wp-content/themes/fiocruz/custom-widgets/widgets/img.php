@@ -47,7 +47,7 @@ class imagem extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-			'alignment',
+			'legend alignment',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'label' => esc_html__( 'Alignment', 'textdomain' ),
@@ -78,7 +78,7 @@ class imagem extends \Elementor\Widget_Base
         ?>
          <figure>
             <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
-            <figcaption class="alignment"><?=wp_get_attachment_caption($settings['image']['id'])?></figcaption>
+            <figcaption class="<?=$settings['alignment']?>"><?=wp_get_attachment_caption($settings['image']['id'])?></figcaption>
         </figure>
         <?php
     }
