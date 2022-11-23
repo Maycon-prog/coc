@@ -46,16 +46,6 @@ class imagem extends \Elementor\Widget_Base
             ]
         );
 
-        $this->add_control(
-            'legenda',
-            [
-                'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'label' => esc_html__('Legenda da Imagem', 'textdomain'),
-                'placeholder' => esc_html__('Enter your legend', 'textdomain'),
-                'default' => 'Sou uma legenda!',
-            ]
-        );
-
         $this->end_controls_section();
     }
 
@@ -65,11 +55,9 @@ class imagem extends \Elementor\Widget_Base
         ?>
          <figure>
             <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
-            <figcaption><?=get_post($settings['image']['id'])->post_excerpt?></figcaption>
+            <figcaption><?=wp_get_attachment_caption($settings['image']['id'])?></figcaption>
         </figure>
         <?php
-        print_r($settings);
-        print_r(wp_get_attachment_caption($settings['image']['id']));
     }
 
     protected function content_template()
