@@ -93,9 +93,13 @@ class widget_slider_bootstrap extends Widget_Base
 ?>
         <div id="<?= $id ?>" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
             <ol class="carousel-indicators">
-                <li data-target="#<?= $id ?>" data-slide-to="0" class="active"></li>
-                <li data-target="#<?= $id ?>" data-slide-to="1"></li>
-                <li data-target="#<?= $id ?>" data-slide-to="2"></li>
+                <?php
+                    for ($i = 0; $i < count($settings['list']); $i++) {
+                ?>
+                    <li data-target="#<?= $id ?>" data-slide-to="<?=$i?>" <?php if($i == 0){echo 'class="active"';}?>></li>
+                <?php
+                    }
+                ?>
             </ol>
             <div class="carousel-inner">
                 <?php
