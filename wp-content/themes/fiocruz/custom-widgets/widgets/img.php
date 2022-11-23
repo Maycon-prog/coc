@@ -36,6 +36,15 @@ class imagem extends \Elementor\Widget_Base
         );
 
         $this->add_control(
+			'id',
+			[
+				'label' => esc_html__( 'View', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::HIDDEN,
+				'default' => uniqid("imageId_"),
+			]
+		);
+
+        $this->add_control(
             'image',
             [
                 'label' => esc_html__('Choose Image', 'textdomain'),
@@ -75,6 +84,8 @@ class imagem extends \Elementor\Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
+        print_r($settings['id']);
+        print_r($settings);
         ?>
          <figure>
             <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
