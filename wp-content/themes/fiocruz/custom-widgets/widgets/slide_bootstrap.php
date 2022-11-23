@@ -115,11 +115,11 @@ class widget_slider_bootstrap extends Widget_Base
                 }
                 ?>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="prev">
+            <button class="carousel-control-prev" aria-label="Slide anterior" title="Slide anterior" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="next">
+            <button class="carousel-control-next" aria-label="Próximo slide" type="button" data-bs-target="<?= '#' . $id ?>" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
