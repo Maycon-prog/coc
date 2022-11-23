@@ -88,8 +88,10 @@ class title extends \Elementor\Widget_Base
 
     protected function render()
     {
-        $array = $this->get_settings_for_display();
-        print_r($array);   
+        $title = $this->get_settings_for_display('title');
+        $aligment = $this->get_settings_for_display('alignment');
+        $type = $this->get_settings_for_display('type');
+        echo "<$type class='$alignment'>$title</$type>"  
     }
 
     protected function content_template()
