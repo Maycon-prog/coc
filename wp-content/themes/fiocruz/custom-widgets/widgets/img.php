@@ -46,6 +46,29 @@ class imagem extends \Elementor\Widget_Base
             ]
         );
 
+        $this->add_control(
+			'alignment',
+			[
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'label' => esc_html__( 'Alignment', 'textdomain' ),
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'textdomain' ),
+						'icon' => 'eicon-text-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'textdomain' ),
+						'icon' => 'eicon-text-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'textdomain' ),
+						'icon' => 'eicon-text-align-right',
+					],
+				],
+				'default' => 'center',
+			]
+		);
+
         $this->end_controls_section();
     }
 
@@ -55,7 +78,7 @@ class imagem extends \Elementor\Widget_Base
         ?>
          <figure>
             <img src="<?=$settings['image']['url']?>" alt="<?=$settings['image']['alt']?>" class="img">
-            <figcaption><?=wp_get_attachment_caption($settings['image']['id'])?></figcaption>
+            <figcaption class="alignment"><?=wp_get_attachment_caption($settings['image']['id'])?></figcaption>
         </figure>
         <?php
     }
