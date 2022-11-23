@@ -1,5 +1,6 @@
 <?php get_header(); 
 		$short_dir = get_template_directory() . '/custom-widgets/my-widgets.php';
+        echo $short_dir;
         $myfiles = array_diff(scandir($short_dir), array('.', '..'));
 
         foreach ($myfiles as $file) {
