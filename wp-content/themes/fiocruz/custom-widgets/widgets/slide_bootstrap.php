@@ -92,6 +92,11 @@ class widget_slider_bootstrap extends Widget_Base
         $id = uniqid("slider_");
 ?>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active" tabindex="0">
                     <h2>Teste de leitura 1</h2>
