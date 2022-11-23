@@ -33,6 +33,7 @@ class My_Elementor_Widgets
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\imagem());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\widget_slider());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\widget_relacionado());
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\widget_slider_bootstrap());
 	}
 }
 
