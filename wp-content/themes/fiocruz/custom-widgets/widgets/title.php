@@ -91,7 +91,7 @@ class title extends \Elementor\Widget_Base
         $title = $this->get_settings_for_display('title');
         $aligment = $this->get_settings_for_display('alignment');
         $type = $this->get_settings_for_display('type');
-        echo "<$type class='$alignment'>$title</$type>"  
+        echo "<$type class='$aligment'>$title</$type>"; 
     }
 
     protected function content_template()
