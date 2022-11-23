@@ -1,4 +1,5 @@
 <?php
+namespace Elementor;
 
 class title extends \Elementor\Widget_Base
 {

@@ -23,10 +23,10 @@ class My_Elementor_Widgets {
 	} 
  
 	public function register_widgets() {
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\title() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_1() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_2() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\My_Widget_3() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\title());
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_slider() );
 		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor\widget_relacionado() );
 
