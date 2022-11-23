@@ -415,9 +415,6 @@ header {
     }
 }
 
-
-
-
 .bloco-relacionado{
     padding: 5px;
 }
@@ -506,6 +503,16 @@ header {
 .title-footer {
     color: #FFF;
     font-weight: 700;
+}
+
+.footer {
+    p {
+        color: #FFF;
+
+        a {
+            color: var(--link);
+        }
+    }
 }
 
 // quando for menor que 992
