@@ -68,6 +68,11 @@ body {
 .carousel-indicators > .active{
     background-color: #fff !important;
 }
+
+.carousel-control-prev, .carousel-control-next{
+    filter: invert(1);
+}
+
 .carousel-control-prev:focus, .carousel-control-next:focus{
     outline: 3px solid #0bf !important;
     outline-offset: 3px !important;
@@ -219,7 +224,7 @@ header {
 
             a {
                 text-decoration: none;
-                color: var(--link);
+                color: var(--texto);
             }
 
             strong {
@@ -518,7 +523,13 @@ header {
         color: #FFF !important; 
 
         a {
-            color: var(--link) !important;
+            color: #FFF !important;
+            text-decoration: underline;
+
+            &:hover {
+                font-weight: bold;
+                color: #8FC3FF !important;
+            }
         }
     }
 }
